@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>网站测速_网站速度诊断_HTTP速度测速_WEB速度测试_CDN测速_API测速_多线路速度测试_多地区速度测试</title>
+
+    <!-- Meta -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="baidu-site-verification" content="codeva-8ZD7u7vbte">
+    <meta name="keywords" content="在线ping,多地ping,多线路ping,持续ping,网络延迟测试,服务器延迟测试">
+    <!-- Favicon icon -->
+    <link rel="icon" href="https://ping.aa1.cn/favicon.ico" type="image/x-icon">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .node_tr {
+            height: 40px !important;
+        }
+        
+        .real_ip {
+            min-width: 140px;
+        }
+        
+        .hover-button {
+            padding: 1px 3px 3px 3px;
+            height: 20px;
+            line-height: 18px;
+            color: #0c7df5;
+            text-align: center;
+            border: 1px solid #0c7df5;
+            font-size: 12px;
+            border-radius: 2px;
+            margin-left: 3px;
+            position: absolute;
+            cursor: pointer;
+            display: none;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        .hover-button:after {
+            margin: 5px 0 0 2px;
+            content: " ";
+            border: 4px solid transparent;
+            border-top-color: #0c7df5;
+        }
+        
+        .hover-button>div {
+            position: absolute;
+            top: 16px;
+            left: -2px;
+            display: none;
+            padding-top: 4px;
+            z-index: 1;
+        }
+        
+        .hover-button:hover>div {
+            display: block;
+        }
+        
+        .hover-button>div>ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #0c7df5;
+            width: 100px;
+            border-radius: 2px;
+            background-color: #fff;
+            z-index: 1;
+        }
+        
+        .hover-button>div>ul li {
+            list-style: none;
+        }
+        
+        .hover-button>div>ul li a {
+            color: #0c7df5;
+            line-height: 24px;
+            display: block;
+            text-decoration: none;
+            padding: 0 10px;
+            text-align: left;
+        }
+        
+        .hover-button>div>ul li a:hover {
+            background-color: #f0f7ff;
+        }
+        
+        table tbody tr:hover td .hover-button {
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+        
+        .btn_small {
+            border: none;
+            background: none;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            background-color: #4680ff;
+            padding: 0 3px;
+            border-radius: 2px;
+        }
+        
+        .btn_small:focus {
+            outline: none;
+        }
+        
+        tr.line_tr {
+            height: 52px !important;
+        }
+    </style><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="7">
+    <script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script>
+    <link rel="stylesheet" href="./assets/layer.css" id="layuicss-layer">
+    <style type="text/css">
+        #_copy {
+            align-items: center;
+            background: #4494d5;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            width: 60px;
+            z-index: 1000
+        }
+        
+        #select-tooltip,
+        #sfModal,
+        .modal-backdrop,
+        div[id^=reader-helper] {
+            display: none!important
+        }
+        
+        .modal-open {
+            overflow: auto!important
+        }
+        
+        ._sf_adjust_body {
+            padding-right: 0!important
+        }
+        
+        .enable_copy_btns_div {
+            position: fixed;
+            width: 154px;
+            left: 10px;
+            top: 45%;
+            background: #e7f1ff;
+            border: 2px solid #4595d5;
+            font-weight: 600;
+            border-radius: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            z-index: 5000
+        }
+        
+        .enable_copy_btns_logo {
+            width: 100%;
+            background: #4595d5;
+            text-align: center;
+            font-size: 12px;
+            color: #e7f1ff;
+            line-height: 30px;
+            height: 30px
+        }
+        
+        .enable_copy_btns_btn {
+            display: block;
+            width: 128px;
+            height: 28px;
+            background: #7f5711;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            margin: 8px auto;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: .9
+        }
+        
+        .enable_copy_btns_btn:hover {
+            opacity: .8
+        }
+        
+        .enable_copy_btns_btn:active {
+            opacity: 1
+        }
+        /* 添加这个 CSS 规则 */
+.headerDetails pre {
+    text-align: left; /* 设置文本左对齐 */
+    white-space: pre-wrap; /* 保留空格与换行，并且自动换行 */
+}
+
+    </style>
+</head>
+
+<body inmaintabuse="1" style="">
+    <!-- [ Pre-loader ] start -->
+
+    <!-- [ Pre-loader ] End -->
+
+    <style>
+        .top_contents {
+            float: right !important;
+        }
+        
+        .left-link {
+            width: 500px;
+            height: 80px;
+            padding: 3px 8px;
+            font-size: 13px;
+            background-color: #f7fafc;
+            line-height: 1.9;
+            float: left !important;
+            text-align: center !important;
+        }
+        
+        .right-pic {
+            margin-left: .5rem !important;
+            float: right !important;
+        }
+    </style>
+
+
+    <nav class="pcoded-navbar theme-horizontal">
+        <div class="container">
+            <div class="navbar-content">
+                <ul class="nav pcoded-inner-navbar">
+
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">在线Ping</span></a>
+                    </li>
+
+                    <!--<li class="nav-item">-->
+                    <!--    <a href="https://ping.aa1.cn/" title="在线ping、多地ping、持续ping"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">网站测速</span></a>-->
+                    <!--</li>-->
+
+                    <!--<li class="nav-item ">-->
+                    <!--    <a href="https://ping.aa1.cn/" title="在线tcping、多地tcping、持续tcping"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">在线Tcping</span></a>-->
+                    <!--</li>-->
+
+                    <li class="nav-item ">
+                        <a href="https://ssl.aa1.cn/" title="检测SSL"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">检测SSL</span></a>
+                    </li>
+                    <li class="nav-item default-menu pcoded-trigger active">
+                        <a href="https://ping.aa1.cn/http/" title="网站测速"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">网站测速</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/" title="Tcping检测"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">Tcping检测（待开发）</span></a>
+                    </li>
+
+
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/" title="DNS测试"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">DNS测试（待开发）</span></a>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper container">
+            <div class="pcoded-content" id="screenshots">
+                <div class="pcoded-inner-content">
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <div class="page-header">
+                                <div class="page-block">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12">
+
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="https://ping.aa1.cn/"><i class="feather icon-home"></i>ping.aa1.cn</a></li>
+                                                <li class="breadcrumb-item"><a href="https://ping.aa1.cn/ping/">网站测速、网站速度诊断、HTTP速度测试、WEB速度测试、CDN测速、API测速</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ breadcrumb ] end -->
+                            <!-- [ Main Content ] start -->
+
+
+                            <div class="col-12 mb-3">
+                                <div class="px-sm-4 py-sm-4 bg-white rounded-lg shadow-sm" style="height: 165px;border: 1px solid #dadada;">
+                                    <div class="row align-items-center mt-3">
+                                        <div class="col">
+                                            <div class="row" style="margin-left: 75px;">
+                                                <!-- IP 输入框 -->
+                                                <input id="ip" type="text" class="form-control real_ip" value="" placeholder="请输入域名，例如：www.baidu.com" autocomplete="off" style="width: 600px;flex:none;">
+
+                                                <!-- 历史记录列表 -->
+                                                <div id="history-list" class="history-list" style="display:none;width: 600px; margin-left: 90px;">
+                                                    <ul id="history_ul" style="margin:0;padding:0;"></ul>
+                                                </div>
+
+                                                <!-- 开始测试按钮 -->
+                                                <button class="btn btn-primary has-ripple ml-2 mb-3 btn-radius" onclick="startTestWithUrlParam();">
+                                                    <i class="feather icon-play"></i> 开始测试
+                                                </button>
+                                                <button id="takeScreenshot" class="btn btn-warning ml-2 mb-3 btn-radius" style="min-width:126px;" onclick="select_screenshot('tcping8.com');">
+                                                    <i class="feather icon-camera"></i> 完整截图
+                                                </button>
+                                                <div style="display: flex;flex-wrap: nowrap;align-items: center;">
+
+                                                    <span class="text-muted" style="font-size: 13px; display: flex; align-items: center;"><i class="feather icon-home" style="font-size: 15px;"></i> 赞助商列表：<span class="text-danger mx-1">火毅盾 贰贰盾 数掘科技 亚洲云 阿沐云 迅马数据 One·degree 渺软公益CDN </span>排名不分先后
+
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                            <script>
+                                                function startTestWithUrlParam() {
+                                                    var ip = document.getElementById('ip').value; // 获取输入框中的值
+                                                    if (ip) {
+                                                        // 构建跳转的 URL，假设 url 为当前页面的基础 URL
+                                                        var redirectUrl = window.location.pathname + '?url=' + encodeURIComponent(ip);
+                                                        window.location.href = redirectUrl; // 跳转到新 URL
+                                                    } else {
+                                                        // alert("请输入有效的 IP 或域名");
+                                                        layer.msg('<span style=\'color:#fff\'> 请输入有效的IP或域名</span>', {
+                                                            time: 2000
+                                                        });
+                                                    }
+                                                }
+                                            </script>
+
+                                            <!--<div class="row" style="margin-left: 75px;">-->
+                                            <!-- 线路选择复选框 -->
+                                            <!--    <label class="custom-control custom-checkbox done-task">-->
+                                            <!--        <input type="checkbox" name="line" value="1" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国电信</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="2" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国联通</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="3" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国移动</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="4" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国多线</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="5" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 海外线路</span>-->
+                                            <!--    </label>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="alert alert-danger text-center shadow-sm" role="alert">
+                                            <i class="feather icon-alert-triangle"></i> 想部署本项目？Ctrl+s 保存到本地 并上传至网站根目录 即可使用！
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 pl-2">
+                                        <div class="alert alert-warning text-center shadow-sm" role="alert">
+                                            <i class="feather icon-alert-triangle"></i> 对网站进行连接、DNS、解析测试分析
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="card mb-3" id="china_map" style="height: 550px; margin-bottom: 20px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;" _echarts_instance_="ec_1732243691272">
+                                            <div style="position: relative; overflow: hidden; width: 586px; height: 550px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="1172" height="1100" style="position: absolute; left: 0px; top: 0px; width: 586px; height: 550px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 pl-2">
+                                        <div class="card mb-3" style="height:550px;margin-bottom:20px;">
+
+                                            <ul class="nav nav-pills m-3" id="pills-tab" role="tablist" style="display:block;">
+                                                <li class="nav-item" style="float:left;">
+                                                    <a class="nav-link active" style="padding: 0 5px 1px 5px;" id="pills-home-tab" data-toggle="pill" href="https://ping.aa1.cn/ping/#china_region" role="tab" aria-controls="pills-home" aria-selected="true" oncontextmenu="return false;" ondragstart="return false;">监测节点综合分析</a>
+                                                </li>
+
+
+                                                <div class="small" style="float:right;"><span class="badge badge-light-primary" id="ip-count"></span> 个监测点参与测试，当前进度：
+                                                    <span id="complete_progress" class="progress" style="display:inline-flex;width: 180px;height: 12px;">
+<div class="progress-bar" role="progressbar" style="" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</span>
+                                                </div>
+
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade active show" id="china_region" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                                    <div class="table-responsive">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover nowrap small table-sm" id="operator-latency-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>运营商</th>
+                                                                        <th>最快</th>
+                                                                        <th>最慢</th>
+                                                                        <th>平均</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>中国电信</td>
+                                                                        <td id="dx_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国联通</td>
+                                                                        <td id="cu_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cu_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cu_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国移动</td>
+                                                                        <td id="cm_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cm_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cm_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国多线</td>
+                                                                        <td id="dx_multi_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_multi_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_multi_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>海外线路</td>
+                                                                        <td id="hw_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="hw_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="hw_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="" style="display:flex;">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header p-3">
+                                            <span class="float-left">
+                                                <span class="class_hr"></span>
+                                            <h5 class="ml-3">域名解析统计</h5>
+                                            <!-- IP 数量会动态更新 -->
+                                            <span class="badge badge-light-primary small" id="ip-count"></span>
+                                            <!-- 复制IP的按钮, data-clipboard-text 动态更新 -->
+                                            <a href="javascript:;" class="copy_ip" data-clipboard-text="">
+                                                <span class="badge badge-light-warning small ml-2">
+                                                        <i class="feather icon-copy"></i> 复制IP
+                                                    </span>
+                                            </a>
+                                            </span>
+                                            <span class="float-right mr-0 noselect">
+                                                <a class="pointer show_hide" onclick="ipv4_list_sh()">收起<i class="feather icon-chevrons-up"></i></a>
+                                            </span>
+                                        </div>
+                                        <div class="ipv4_list card-body p-2">
+                                            <ul class="ip_list m-0 p-0">
+                                                <!-- IP 列表会动态生成 -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="" style="display:flex;">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header p-3">
+                                            <span class="float-left">
+                                                <span class="class_hr"></span>
+                                            <h5 class="ml-3">Ping测试结果 赞助节点QQ：15001904</h5>
+
+                                            <!-- 线路选择 -->
+                                            <label class="Bee-radio done-task ml-3">
+                                                    <input type="radio" name="filter_line" value="all" class="custom-control-input" checked="">
+                                                    <span class="custom-control-label2"> 全部</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="1" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国电信</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="2" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国联通</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="3" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国移动</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="4" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国多线</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="5" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 海外线路</span>
+                                                </label>
+                                            </span>
+                                            <!--<label class="Bee-radio done-task ml-2">-->
+                                            <!--        <input type="radio" name="filter_line" value="6" class="custom-control-input">-->
+                                            <!--        <span class="custom-control-label2"> 响应超时</span>-->
+                                            <!--    </label>-->
+                                            <!--</span>-->
+                                            <label class="Bee-radio done-task ml-2 label_filter_ip" style="display:none">
+                                                <input type="radio" class="custom-control-input" checked="">
+                                                <span class="custom-control-label2 filter_ip">--</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="dt-responsive table-responsive">
+                                            <table id="simpletable" class="table table-hover nowrap small">
+                                                <thead>
+        <tr>
+            <th>检测点</th>
+            <th>IP地址</th>
+            <th>状态码</th>
+            <th>连接</th>
+            <th>DNS握手</th>
+            <th>下载</th>
+            <th>总耗时</th>
+            <th>重定向</th>
+            <th>Head</th>
+            <th>赞助商</th>
+        </tr>
+    </thead>
+    <tbody><tr node="北京市｜一区" node_type="1" class="node_tr" offline="0" id="row_北京市｜一区">
+            <td class="text-left">
+                <span class="badge badge-info">电信</span> 测试节点
+            </td>
+            <td class="real_ip" id="real_ip_北京市｜一区">103.205.253.5</td>
+            <td id="last_status_code_北京市｜一区">200</td>
+            <td id="last_connect_time_北京市｜一区">0.074s</td>
+            <td id="last_dns_time_北京市｜一区">0.049s</td>
+            <td id="last_download_time_北京市｜一区">0.447s</td>
+            <td id="last_total_time_北京市｜一区" style="color: rgb(65, 221, 64);">0.502s</td>
+            <td id="last_is_redirect_北京市｜一区">1次(耗时：0.502s  https://www.gfvps.cn/)</td>
+            <td id="last_header_info_北京市｜一区">
+                <button class="toggleHeader custom-control-label2" data-city="北京市｜一区">查看详情</button>
+            </td>
+            <td id="last_zzs_数掘科技">
+                <a href="http://gfvps.cn" target="_blank">数掘科技</a>
+            </td>
+        </tr>
+        </tbody>
+                                            </table>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- [ Main Content ] end -->
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="card-body justify-content-between align-items-center">
+            <span class="d-flex justify-content-center">友情链接： 
+                <span class="ml-2"><a href="https://ssl.aa1.cn/" target="_blank">SSL检测</a></span>
+            <span class="ml-2"><a href="https://cesu.net/" target="_blank">测速网</a></span>
+            <span class="ml-2"><a href="https://hydun.com/" target="_blank">火毅盾</a></span>
+            <span class="ml-2"><a href="https://gfvps.cn/" target="_blank">数掘科技</a></span>
+            <span class="ml-2"><a href="https://www.aa1.cn/" target="_blank">夏柔公益</a></span>
+            <span class="ml-2"><a href="https://007idc.cn/" target="_blank">007IDC</a></span>
+            <span class="ml-2"><a href="https://amuyun.cn/" target="_blank">阿沐云</a></span>
+            </span>
+            <span class="d-flex justify-content-center">Copyright © 2024 在线Ping检测<span class="ml-2"><a href="https://beian.miit.gov.cn/" target="beian_blank"></a></span></span>
+        </div>
+    </div>
+    <script src="./assets/jquery-1.10.2.min.js"></script>
+    <script src="./assets/clipboard.min.js"></script>
+    <!-- Matomo -->
+
+    <!-- Required Js -->
+    <script src="./assets/vendor-all.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <script src="./assets/ripple.js"></script>
+    <script src="./assets/prism.js"></script>
+    <script src="./assets/dom-to-image.min.js"></script>
+    <script src="./assets/FileSaver.min.js"></script>
+    <script src="./assets/isotope.pkgd.min.js"></script>
+    <script src="./assets/layer.js"></script>
+    <script src="./assets/index.js"></script>
+    <script src="./assets/jquery.cookie.js"></script>
+    <script src="./assets/echarts.min.js"></script>
+    <script src="./assets/china.js"></script>
+    <!-- End Matomo Code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        let socket;
+        let cityList = [];
+        let messageCount = 0; // 初始化消息计数器
+        let tableBody = document.querySelector("#simpletable tbody");
+
+        // 获取 URL 参数中的域名
+        function getUrlParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // 连接 WebSocket
+        function connectWebSocket() {
+            const domain = getUrlParam('url');
+
+            if (!domain) {
+                console.error("URL 参数中缺少 'url'，未连接 WebSocket");
+                layer.msg('<span style="color:#fff">请开始第一次测速</span>', {
+                    time: 2000
+                });
+                return;
+            }
+
+            socket = new WebSocket("wss://wss.http.ping.aa1.cn:8766"); 
+
+            // 连接成功
+            socket.onopen = () => {
+                console.log("连接成功！等待数据...");
+                cityList = [];
+                tableBody.innerHTML = ""; // 清空表格
+
+                // 开始请求数据
+                requestData(domain);
+            };
+
+            // 接收 WebSocket 数据
+            socket.onmessage = (event) => {
+                let data = JSON.parse(event.data);
+
+                // 接收到城市列表
+                if (data.status === "success" && data.city_list) {
+                    cityList = data.city_list;
+                    displayCityList(cityList);
+                    // alert(data.jc_Count);
+                    jc_Count_i = data.jc_Count;
+                }
+
+                // 接收到每个城市的 Ping 测试结果
+                if (data.status === "success" && data.results) {
+                    updatePingResults(data.results);
+                    messageCount++;
+
+                    // 更新监测点计数
+                    const jcCount = jc_Count_i;
+                    document.getElementById("ip-count").textContent = jcCount;
+
+                    // 动态更新进度条
+                    const progress = Math.min((messageCount / jcCount) * 100, 100); // 计算百分比
+                    const progressBar = document.querySelector("#complete_progress .progress-bar");
+                    progressBar.style.width = `${progress}%`;
+                    progressBar.setAttribute("aria-valuenow", progress);
+                    progressBar.textContent = `${Math.round(progress)}%`;
+
+                    // 检测是否完成
+                    if (messageCount >= jcCount) {
+                        // alert("检测完毕！");
+                        layer.msg('<span style=\'color:#fff\'>检测完毕，大佬请查阅！</span>', {
+                            time: 2000
+                        });
+                    }
+                }
+
+                // 错误信息
+                if (data.status === "error") {
+                    console.error("Error:", data.msg);
+                }
+            };
+
+            // WebSocket 连接关闭
+            socket.onclose = () => {
+                console.log("WebSocket连接已关闭");
+                setTimeout(connectWebSocket, 5000); // 尝试重新连接
+            };
+
+            socket.onerror = (error) => {
+                console.error("WebSocket 错误:", error);
+            };
+        }
+
+
+        // 请求数据（将域名传递给 WebSocket）
+        function requestData(domain) {
+            if (domain === "") {
+                alert("请输入有效的域名或IP！");
+                return;
+            }
+
+            // 确保 WebSocket 已连接并处于打开状态
+            if (socket.readyState === WebSocket.OPEN) {
+                socket.send(JSON.stringify({
+                    action: "ping",
+                    domain: domain
+                }));
+
+                console.log("发送ping请求给 WebSocket服务器：", domain);
+            } else {
+                console.error("WebSocket 连接未打开，无法发送请求！");
+            }
+        }
+
+        // 页面加载时初始化 WebSocket 连接
+        window.onload = connectWebSocket;
+
+
+        // 显示城市和运营商列表
+function displayCityList(cities) {
+    let tableHeader = document.querySelector("#simpletable thead");
+    tableHeader.innerHTML = `
+        <tr>
+            <th>检测点</th>
+            <th>IP地址</th>
+            <th>状态码</th>
+            <th>连接</th>
+            <th>DNS握手</th>
+            <th>下载</th>
+            <th>总耗时</th>
+            <th>重定向</th>
+            <th>Head</th>
+            <th>赞助商</th>
+        </tr>
+    `;
+
+    // 清空表格
+    let tableBody = document.querySelector("#simpletable tbody");
+    tableBody.innerHTML = "";
+
+    // 根据城市列表动态生成表格
+    cities.forEach(city => {
+        let tr = document.createElement('tr');
+        tr.setAttribute('node', city.city);
+        tr.setAttribute('node_type', city.node_type);
+        tr.setAttribute('class', 'node_tr');
+        tr.setAttribute('offline', '0');
+        tr.setAttribute('id', `row_${city.city}`); // 为每个城市行设置唯一ID
+
+        // 根据 city.operator 设置不同的 badge 样式
+        let badgeClass = '';
+        switch (city.operator) {
+            case '电信':
+                badgeClass = 'badge badge-info'; // 电信为 badge-info
+                break;
+            case '联通':
+                badgeClass = 'badge badge-warning'; // 联通为 badge-warning
+                break;
+            case '移动':
+                badgeClass = 'badge badge-success'; // 移动为 badge-success
+                break;
+            case '多线':
+                badgeClass = 'badge badge-danger'; // 多线为 badge-danger
+                break;
+            default:
+                badgeClass = 'badge badge-secondary'; // 默认设置为其他样式
+                break;
+        }
+
+        tr.innerHTML = `
+            <td class="text-left">
+                <span class="${badgeClass}">${city.operator}</span> ${city.city}
+            </td>
+            <td class="real_ip" id="real_ip_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_status_code_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_connect_time_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_dns_time_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_download_time_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_total_time_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_is_redirect_${city.city}">
+                <div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </td>
+            <td id="last_header_info_${city.city}">
+                <a class="show_head_button" node="${city.city}" href="javascript:;">查看详情</a>
+            </td>
+            <td id="last_zzs_${city.zzs}">
+                <a href="${city.zzs_url}" target="_blank">${city.zzs}</a>
+            </td>
+        `;
+
+        tableBody.appendChild(tr);
+
+        // 为每个 "查看详情" 按钮添加点击事件
+        const showButton = tr.querySelector('.show_head_button');
+        showButton.addEventListener('click', function () {
+            let detailRow = document.getElementById(`head_show_${city.city}`);
+
+            if (!detailRow) {
+                // 如果没有找到详情行，则创建并插入
+                detailRow = document.createElement('tr');
+                detailRow.setAttribute('id', `head_show_${city.city}`);
+                detailRow.setAttribute('class', 'head_info');
+                detailRow.style.backgroundColor = '#f9fbff'; // 可以根据需要设置样式
+                detailRow.innerHTML = `
+                    <td colspan="10">
+                        <pre style="text-align: left;white-space: pre-wrap;">${city.headers || ''}</pre>
+                    </td>
+                `;
+                // 在该城市行下面插入详情行
+                tr.insertAdjacentElement('afterend', detailRow);
+                showButton.textContent = '收起';
+            } else {
+                // 如果已存在详情行，则删除
+                detailRow.remove();
+                showButton.textContent = '查看详情';
+            }
+        });
+    });
+}
+
+        // 存储 IP 地址和其出现次数
+        let ipCounts = {};
+
+
+
+
+        // 更新所有城市的 Ping 测试结果
+        function updatePingResults(results) {
+    console.log("Received results:", results); // 打印数据查看结构
+
+    results.forEach(result => {
+        // 直接访问 result 中的数据
+        const province = result.province.trim(); // 省份名称
+        const city = result.city.trim(); // 城市名称
+        const totalTime = parseFloat(result.timing.total_time); // 总消耗时间
+        let is_redirect = result.is_redirect; // 是否重定向
+
+        const loaclurl = result.loaclurl; // 是否重定向
+
+        const loaclurl_time = result.loaclurl_time; // 是否重定向
+        if (is_redirect) {
+            is_redirect = '1次' + '(耗时：' + loaclurl_time +'s  ' + loaclurl +')';
+        } else {
+            is_redirect = '否';
+        }
+
+
+        const firstResult = Array.isArray(result.results) && result.results.length > 0 ? result.results[0] : null;
+
+const rediretc_status_code = firstResult ? firstResult.status_code : null;
+        const ip_address = result.ip_address; // 获取IP地址
+        const status_code = result.status_code; // 状态码
+        const headers = result.headers; // 获取头部信息
+
+        const connectTime = parseFloat(result.timing.connect_time); // 连接时间
+
+        // const loaclurl_time = result.loaclurl_time; // 链接跳转网站的耗时
+
+        // const loaclurl = result.loaclurl; // 链接跳转网站的url
+
+
+        const redirect_info = result.redirect_info; // 链接跳转网站的头部信息
+
+       const dnsTime = parseFloat(result.timing.dns_time); // DNS 连接时间
+        const downloadTime = parseFloat(result.timing.download_time); // 下载时间
+
+        const operator = result.operator ? result.operator.trim() : '未知运营商'; // 运营商名称
+
+        console.log(province, city, totalTime, ip_address, is_redirect, loaclurl, rediretc_status_code, status_code, dnsTime,connectTime, downloadTime, operator);
+
+        // 根据运营商分类存储延迟时间
+        switch (operator) {
+            case '电信':
+                if (totalTime > 0) latencyData.dx.push({
+                    time: totalTime,
+                    city
+                });
+                break;
+            case '联通':
+                if (totalTime > 0) latencyData.cu.push({
+                    time: totalTime,
+                    city
+                });
+                break;
+            case '移动':
+                if (totalTime > 0) latencyData.cm.push({
+                    time: totalTime,
+                    city
+                });
+                break;
+            case '多线':
+                if (totalTime > 0) latencyData.dx_multi.push({
+                    time: totalTime,
+                    city
+                });
+                break;
+            case '海外':
+                if (totalTime > 0) latencyData.hw.push({
+                    time: totalTime,
+                    city
+                });
+                break;
+            default:
+                console.log(`无法识别的运营商: ${operator}`);
+                break;
+        }
+
+        // 查找省份对象
+        const provinceData = mydata.find(item => item.name === province);
+
+        if (provinceData) {
+            // 确保 provinceData.cityes 是一个数组
+            if (!Array.isArray(provinceData.cityes)) {
+                provinceData.cityes = [];
+            }
+
+            // 检查是否已有该城市数据
+            let cityData = provinceData.cityes.find(cityEntry => cityEntry.name === city);
+
+            if (cityData) {
+                // 更新城市的响应时间和运营商
+                cityData.time = totalTime;
+                cityData.operator = operator;
+            } else {
+                // 如果没有该城市数据，新增
+                provinceData.cityes.push({
+                    name: city,
+                    time: totalTime,
+                    operator: operator
+                });
+            }
+
+            // 计算该省份的平均响应时间
+            const validTimes = provinceData.cityes
+                .map(cityEntry => cityEntry.time)
+                .filter(t => t > 0); // 只统计有效时间
+
+            if (validTimes.length > 0) {
+                const averageTime = (
+                    validTimes.reduce((sum, t) => sum + t, 0) / validTimes.length
+                ).toFixed(2); // 计算平均值
+
+                // 更新该省的 value，用于地图渲染
+                provinceData.value = parseFloat(averageTime);
+            } else {
+                // 如果没有有效数据，设为默认值 0
+                provinceData.value = 0;
+            }
+        }
+
+        // 更新表格中的城市响应时间和 IP
+        updateCityInfo(city, ip,ip_address, is_redirect, rediretc_status_code, status_code, connectTime,loaclurl, dnsTime, downloadTime, totalTime, headers, redirect_info);
+
+    });
+
+    // 更新地图渲染
+    china_map.setOption({
+        series: [{
+            data: mydata // 使用更新后的 mydata
+        }]
+    });
+
+    // 计算并显示每个运营商的最慢、最快和平均延迟
+    updateOperatorLatency();
+}
+
+        // 更新城市信息（响应时间、IP 和其他相关字段）
+function updateCityInfo(city, totalTime, ip, connectTime, dnsTime, downloadTime) {
+    const row = document.querySelector(`#city-info-table tr[data-city='${city}']`);
+    if (row) {
+        // 更新表格中的数据
+        row.querySelector('.city-time').textContent = totalTime.toFixed(2); // 更新响应时间（总时间）
+        row.querySelector('.city-ip').textContent = ip; // 更新IP地址
+        row.querySelector('.city-connect-time').textContent = connectTime.toFixed(2); // 连接时间
+        row.querySelector('.city-dns-time').textContent = dnsTime.toFixed(2); // DNS 时间
+        row.querySelector('.city-download-time').textContent = downloadTime.toFixed(2); // 下载时间
+    } else {
+        // 如果该城市没有对应的行，创建新的行
+        const newRow = document.createElement('tr');
+        newRow.setAttribute('data-city', city);
+        newRow.innerHTML = `
+            <td>${city}</td>
+            <td class="city-time">${totalTime.toFixed(2)}</td>
+            <td class="city-ip">${ip}</td>
+            <td class="city-connect-time">${connectTime.toFixed(2)}</td>
+            <td class="city-dns-time">${dnsTime.toFixed(2)}</td>
+            <td class="city-download-time">${downloadTime.toFixed(2)}</td>
+        `;
+        document.querySelector('#city-info-table tbody').appendChild(newRow);
+    }
+}
+
+        // 计算并显示每个运营商的最慢、最快和平均延迟
+        function updateOperatorLatency() {
+            Object.keys(latencyData).forEach(key => {
+                // 过滤掉无效的 time=0 值
+                const validEntries = latencyData[key].filter(entry => entry.time > 0); // 只保留有效数据
+                console.log(`运营商: ${key}, 有效延迟数据:`, validEntries);
+
+                if (validEntries.length > 0) {
+                    // 找到最快和最慢的条目
+                    const fastestEntry = validEntries.reduce((min, entry) => entry.time < min.time ? entry : min);
+                    const slowestEntry = validEntries.reduce((max, entry) => entry.time > max.time ? entry : max);
+
+                    // 提取相关数据
+                    const fastestTime = fastestEntry.time.toFixed(2);
+                    const fastestCity = fastestEntry.city;
+                    const slowestTime = slowestEntry.time.toFixed(2);
+                    const slowestCity = slowestEntry.city;
+
+                    // 计算平均值
+                    const averageTime = (
+                        validEntries.reduce((sum, entry) => sum + entry.time, 0) / validEntries.length
+                    ).toFixed(2);
+
+                    // 更新表格的值
+                    const fastElement = document.getElementById(`${key}_fast`);
+                    const slowElement = document.getElementById(`${key}_slow`);
+                    const avgElement = document.getElementById(`${key}_avg`);
+
+                    if (fastElement && slowElement && avgElement) {
+                        fastElement.textContent = `${fastestTime}s (${fastestCity})`;
+                        slowElement.textContent = `${slowestTime}s (${slowestCity})`;
+                        avgElement.textContent = `${averageTime}s`;
+                    }
+                } else {
+                    // 如果没有有效数据，显示 "N/A"
+                    const fastElement = document.getElementById(`${key}_fast`);
+                    const slowElement = document.getElementById(`${key}_slow`);
+                    const avgElement = document.getElementById(`${key}_avg`);
+
+                    if (fastElement && slowElement && avgElement) {
+                        fastElement.textContent = "N/A";
+                        slowElement.textContent = "N/A";
+                        avgElement.textContent = "N/A";
+                    }
+                }
+            });
+        }
+
+        // 初始化延迟数据对象
+        let latencyData = {
+            "dx": [], // 电信
+            "cu": [], // 联通
+            "cm": [], // 移动
+            "dx_multi": [], // 多线
+            "hw": [] // 海外
+        };
+
+        // 记录 IP 出现的次数
+        const ipCounts2 = {};
+
+// 更新城市信息（响应时间、IP 和其他相关字段）
+function updateCityInfo(city, ip, ip_address, is_redirect, redirect_status_code, status_code, connectTime, loaclurl, dnsTime, downloadTime, totalTime, headers, redirect_info) {
+    // 获取对应城市的元素
+    const ipElement = document.getElementById(`real_ip_${city}`);
+    const totalTimeElement = document.getElementById(`last_total_time_${city}`);
+    const connectTimeElement = document.getElementById(`last_connect_time_${city}`);
+    const dnsTimeElement = document.getElementById(`last_dns_time_${city}`);
+    const downloadTimeElement = document.getElementById(`last_download_time_${city}`);
+    const statusCodeElement = document.getElementById(`last_status_code_${city}`);
+    const isRedirectElement = document.getElementById(`last_is_redirect_${city}`);
+    const headerInfoElement = document.getElementById(`last_header_info_${city}`);
+    
+    // 如果元素存在，则更新其内容
+    if (ipElement && totalTimeElement && connectTimeElement && dnsTimeElement && downloadTimeElement) {
+        // 更新 IP 信息
+        ipElement.innerHTML = ip_address || "<font color='red'>检测错误</font>";
+
+        // 更新总时间（Total Time）
+        totalTimeElement.textContent = `${totalTime}s`;
+        // 设置 totalTime 字体颜色
+        if (totalTime === 0) {
+            totalTimeElement.style.color = 'red';
+        } else if (totalTime > 0 && totalTime <= 0.5) {
+            totalTimeElement.style.color = '#41dd40';
+        } else if (totalTime > 0.5 && totalTime <= 1) {
+            totalTimeElement.style.color = '#41dd40';
+        } else if (totalTime > 1 && totalTime <= 3) {
+            totalTimeElement.style.color = '#bdf764';
+        } else if (totalTime > 3 && totalTime <= 10) {
+            totalTimeElement.style.color = '#f69933';
+        } else if (totalTime > 10) {
+            totalTimeElement.style.color = 'red';
+        }
+
+ // 记录有效的 IP 地址
+                if (ip_address && ip_address !== "未知3" && !ipCounts2[ip_address]) {
+                    ipCounts2[ip_address] = 1; // 确保不重复记录同一个 IP
+                }
+
+                // 更新 IP 列表和 IP 数量显示
+                updateIPList(ip_address);
+            
+        // 更新连接时间（Connect Time）
+        connectTimeElement.textContent = `${connectTime}s`;
+
+        // 更新 DNS 时间（DNS Time）
+        dnsTimeElement.textContent = `${dnsTime}s`;
+
+        // 更新下载时间（Download Time）
+        downloadTimeElement.textContent = `${downloadTime}s`;
+
+        // 如果存在状态码和重定向等字段，则更新它们
+        if (statusCodeElement) {
+            statusCodeElement.textContent = status_code;
+        }
+        if (isRedirectElement) {
+            isRedirectElement.textContent = is_redirect;
+        }
+
+        // 如果存在请求头信息，更新并添加显示/隐藏按钮
+        if (headerInfoElement) {
+            // 使用 <div> 包裹请求头信息，添加按钮控制显示
+            let redirectContent = '';
+            if (redirect_info) {
+                redirectContent = `<br>${redirect_info}`;
+            }
+
+            headerInfoElement.innerHTML = `
+                <button class="toggleHeader custom-control-label2" data-city="${city}">查看详情</button>
+                <div class="headerDetails" id="headerDetails_${city}" style="display:none;">
+                    <pre>${headers}
+                    <br>${redirectContent}</pre>
+                </div>
+            `;
+
+            // 为按钮添加点击事件，切换详情显示状态
+            $('.toggleHeader[data-city="' + city + '"]').click(function () {
+                const headerDetails = $('#headerDetails_' + city);
+                const button = $(this);
+                const detailRowId = `head_show_${city}`;
+                let detailRow = document.getElementById(detailRowId);
+
+                // 如果详情行不存在，则创建并插入
+                if (!detailRow) {
+                    detailRow = document.createElement('tr');
+                    detailRow.setAttribute('id', detailRowId);
+                    detailRow.setAttribute('class', 'head_info');
+                    detailRow.style.backgroundColor = '#f9fbff'; // 可以根据需要设置样式
+                    detailRow.innerHTML = `
+                        <td colspan="10">
+                            <pre style="text-align: left;white-space: pre-wrap;">${headers}<br>${redirectContent}</pre>
+                        </td>
+                    `;
+                    // 在该城市行下面插入详情行
+                    document.getElementById(`row_${city}`).insertAdjacentElement('afterend', detailRow);
+                    button.text('收起');
+                } else {
+                    // 如果已经显示，则隐藏并删除详情行
+                    detailRow.remove();
+                    button.text('查看详情');
+                }
+            });
+            
+           
+        }
+    } else {
+        console.log(`Some elements for city ${city} were not found.`);
+    }
+}
+
+
+// 更新 IP 列表
+function updateIPList(ip_address) {
+    console.log("更新IP列表开始");
+
+    let ipListContainer = document.querySelector(".ip_list");
+    ipListContainer.innerHTML = "";
+
+    let totalCities = 0;
+    Object.keys(ipCounts2).forEach(ip_address => {
+        totalCities += ipCounts2[ip_address];
+    });
+
+    console.log("总城市数: ", totalCities);
+
+    let ipCountBadge = document.getElementById("ip-count");
+    if (ipCountBadge) {
+        ipCountBadge.textContent = totalCities;
+        console.log("更新IP计数徽章: ", totalCities);
+    }
+
+    Object.keys(ipCounts2).forEach(ip_address => {
+        let count = ipCounts2[ip_address];
+        let percentage = ((count / totalCities) * 100).toFixed(2);
+
+        console.log(`IP地址: ${ip_address}, 数量: ${count}, 百分比: ${percentage}%`);
+
+        let ipItem = document.createElement('a');
+        ipItem.setAttribute('title', `点击筛选`);
+        ipItem.setAttribute('class', 'pointer noselect');
+        ipItem.setAttribute('onclick', `filter_ip('${ip_address}')`);
+        ipItem.innerHTML = `
+        <li><span class="ml-3">${ip_address}</span><span class="text-primary float-right mr-3">${percentage}%</span></li>
+        `;
+        ipListContainer.appendChild(ipItem);
+    });
+
+    let clipboardTextElement = document.querySelector(".copy_ip");
+    if (clipboardTextElement) {
+        // 获取所有有效 IP 地址
+        let ipList = Object.keys(ipCounts2).filter(ip_address => ip_address !== "未知4");
+
+        console.log("有效IP地址列表: ", ipList);
+
+        if (ipList.length > 0) {
+            // 将 IP 地址用换行符拼接
+            let clipboardText = ipList.join("\n");
+            clipboardTextElement.setAttribute('data-clipboard-text', clipboardText);
+            console.log("设置剪贴板文本: ", clipboardText);
+        }
+    }
+
+    console.log("更新IP列表结束");
+}
+
+
+        // 在输入框输入后触发ping测试（可选）
+        // document.getElementById("ip").addEventListener("keyup", function(event) {
+        //     if (event.key === "Enter") {
+        //         check_form();
+        //     }
+        // });
+
+
+        var ipv4_list_arr = [];
+        var task_now = 0;
+        var timeout_list = '';
+        var check_node_num = 0;
+        var complete_node_num = 0;
+        var time_out_num = 0;
+
+
+        $(function() {
+            var clipboards = new ClipboardJS('.copy_ip');
+            clipboards.on('success', function(e) {
+                layer.msg('<span style=\'color:#fff\'>IP复制成功</span>', {
+                    time: 2000
+                });
+            });
+
+
+        });
+
+
+        var china_fast = new Array()
+        for (var i = 0; i < 34; i++) {
+            china_fast[i] = 9999;
+        }
+
+        var mydata = [{
+            name: '北京',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '天津',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '上海',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '重庆',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '河北',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '河南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '云南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '辽宁',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '黑龙江',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '湖南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '安徽',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '山东',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '新疆',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '江苏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '浙江',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '江西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '湖北',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '广西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '甘肃',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '山西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '内蒙古',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '陕西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '吉林',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '福建',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '贵州',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '广东',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '青海',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '西藏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '四川',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '宁夏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '海南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '台湾',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '香港',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '澳门',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '南海诸岛',
+            value: 100000,
+            cityes: []
+        }];
+
+
+        var splitList = [{
+    start: 0,
+    end: 0.5,
+    label: '<=0.5s',
+    color: '#24aa1d' // 很绿
+}, {
+    start: 0.5,
+    end: 1,
+    label: '0.5s-1s',
+    color: '#42dd3f' // 浅绿
+}, {
+    start: 1,
+    end: 3,
+    label: '1s-3s',
+    color: '#bef663' // 浅浅绿
+}, {
+    start: 3,
+    end: 10,
+    label: '3s-10s',
+    color: '#f6ed44' // 橙色
+}, {
+    start: 10,
+    end: 9999,
+    label: '>10s',
+    color: '#e61610' // 超时
+}, {
+            start: 99999,
+            end: 100001,
+            label: '待检测',
+            color: '#eeeeee'
+        }];
+
+
+        var option = {
+                title: {
+                    text: '',
+                    top: '0px',
+                    left: '25px',
+                    x: 'left',
+                    subtext: "{logo|}",
+                    subtextStyle: {
+                        fontSize: 12,
+                        color: "#333",
+                        rich: {
+                            logo: {
+                                fontSize: 20,
+                                fontWeight: 700,
+                                color: '#EEA644',
+                                backgroundColor: {
+                                    image: '/assets/logo.png'
+                                }
+                            }
+                        }
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function(params) {
+                            if (params.name) {
+                                if (params.value > 99999) {
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    <p style="line-height: 20px; padding: 0 10px;">
+                        待检测
+                    </p>
+                </div>
+            `;
+                                } else if (params.value < 0.01) {
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    <p style="line-height: 20px; padding: 0 10px; color: #ff0000;">
+                        响应超时或节点故障
+                    </p>
+                </div>
+            `;
+                                } else {
+                                    let cityList = ''; // 城市列表字符串初始化
+                                    let minTime = Infinity; // 初始化最快时间
+                                    let maxTime = -Infinity; // 初始化最慢时间
+                                    let fastestCity = ''; // 初始化最快城市
+                                    let slowestCity = ''; // 初始化最慢城市
+                                    let showAverage = true; // 是否显示平均响应时间
+
+                                    if (Array.isArray(params.data.cityes)) {
+                                        const cities = params.data.cityes.filter(city => city.time > 0); // 排除响应时间为 0 的城市
+                                        cityList = cities
+                                            .map(city => {
+                                                // 更新最快和最慢时间
+                                                if (city.time < minTime) {
+                                                    minTime = city.time;
+                                                    fastestCity = `${city.name} (${city.time}ms)`;
+                                                }
+                                                if (city.time > maxTime) {
+                                                    maxTime = city.time;
+                                                    slowestCity = `${city.name} (${city.time}ms)`;
+                                                }
+
+                                                // 运营商标签
+                                                let operatorTag = '';
+                                                if (city.operator === '电信') {
+                                                    operatorTag = '<font color="#9ccc65">[电信]</font>';
+                                                } else if (city.operator === '联通') {
+                                                    operatorTag = '<font color="#ffba57">[联通]</font>';
+                                                } else if (city.operator === '移动') {
+                                                    operatorTag = '<font color="#00acc1">[移动]</font>';
+                                                } else {
+                                                    operatorTag = `[${city.operator || '未知1'}]`;
+                                                }
+
+                                                // 拼接城市信息
+                                                return `${operatorTag} ${city.name} (${city.time}ms)`;
+                                            })
+                                            .join('<br>'); // 用换行符分隔
+
+                                        // 如果只有一个有效城市，不显示平均、最快、最慢时间
+                                        if (cities.length <= 1) {
+                                            showAverage = false;
+                                            fastestCity = '';
+                                            slowestCity = '';
+                                        }
+                                    }
+
+                                    // 返回渲染的内容
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    ${showAverage ? `<p style="line-height: 20px; padding: 0 10px;">平均响应时间：${params.value}ms</p>` : ''}
+                    ${fastestCity ? `<p style="line-height: 20px; padding: 0 10px;">最快响应：${fastestCity}</p>` : ''}
+                    ${slowestCity ? `<p style="line-height: 20px; padding: 0 10px;">最慢响应：${slowestCity}</p>` : ''}
+                    <p style="line-height: 20px; padding: 0 10px;">
+                        ${cityList}
+                    </p>
+                </div>
+            `;
+        }
+    }
+}
+   },
+
+
+            dataRange: {
+                top: '380px',
+                min: 0,
+                max: 99999,
+                x: '5%',
+                y: '70%',
+                splitList: splitList,
+                color: ['#24aa1d', '#42dd3f', '#bef663', '#f6ed44', '#f69833', '#e61610'],
+            },
+            roamController: {
+                show: true,
+                x: 'right',
+                mapTypeControl: {
+                    'china': true
+                }
+            },
+            series: [{
+                name: '',
+                type: 'map',
+                mapType: 'china',
+                mapLocation: {
+                    x: 'center',
+                    y: 'top',
+                },
+                top: '60px',
+                hoverable: false,
+                roam: false,
+                width: '95%',
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false,
+                            textStyle: {
+                                color: "rgb(249, 249, 249)"
+                            }
+                        },
+                        areaStyle: {
+                            color: '#fff4e7'
+                        },
+                        borderColor: 'rgba(255, 255, 255, .5)',
+                        borderWidth: 1,
+                        shadowColor: 'rgba(255, 255, 255, .5)',
+                    },
+                    emphasis: {
+                        label: {
+                            show: true
+                        }
+                    }
+                },
+                data: mydata,
+            }]
+        };
+
+        var china_map = echarts.init(document.getElementById('china_map'));
+        china_map.setOption(option);
+        china_map.resize();
+    </script>
+    <script src="./assets/icmp_ping.js"></script>
+    <script charset="UTF-8" id="LA_COLLECT" src="./assets/js-sdk-pro.min.js"></script>
+
+    <script src="chrome-extension://onepmapfbjohnegdmfhndpefjkppbjkm/sm.bundle.js" data-pname="supercopy-v3" data-asset-path="https://spc4.s3.ap-east-1.amazonaws.com"></script>
+    <div class="layui-layer-move" id="layui-layer-move"></div>
+
+</body>
+
+</html>

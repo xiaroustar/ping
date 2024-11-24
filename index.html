@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>在线ping_多地ping_多线路ping_持续ping_网络延迟测试_服务器延迟测试</title>
+
+    <!-- Meta -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="baidu-site-verification" content="codeva-8ZD7u7vbte">
+    <meta name="keywords" content="在线ping,多地ping,多线路ping,持续ping,网络延迟测试,服务器延迟测试">
+    <!-- Favicon icon -->
+    <link rel="icon" href="https://ping.aa1.cn/favicon.ico" type="image/x-icon">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .node_tr {
+            height: 40px !important;
+        }
+        
+        .real_ip {
+            min-width: 140px;
+        }
+        
+        .hover-button {
+            padding: 1px 3px 3px 3px;
+            height: 20px;
+            line-height: 18px;
+            color: #0c7df5;
+            text-align: center;
+            border: 1px solid #0c7df5;
+            font-size: 12px;
+            border-radius: 2px;
+            margin-left: 3px;
+            position: absolute;
+            cursor: pointer;
+            display: none;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        .hover-button:after {
+            margin: 5px 0 0 2px;
+            content: " ";
+            border: 4px solid transparent;
+            border-top-color: #0c7df5;
+        }
+        
+        .hover-button>div {
+            position: absolute;
+            top: 16px;
+            left: -2px;
+            display: none;
+            padding-top: 4px;
+            z-index: 1;
+        }
+        
+        .hover-button:hover>div {
+            display: block;
+        }
+        
+        .hover-button>div>ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #0c7df5;
+            width: 100px;
+            border-radius: 2px;
+            background-color: #fff;
+            z-index: 1;
+        }
+        
+        .hover-button>div>ul li {
+            list-style: none;
+        }
+        
+        .hover-button>div>ul li a {
+            color: #0c7df5;
+            line-height: 24px;
+            display: block;
+            text-decoration: none;
+            padding: 0 10px;
+            text-align: left;
+        }
+        
+        .hover-button>div>ul li a:hover {
+            background-color: #f0f7ff;
+        }
+        
+        table tbody tr:hover td .hover-button {
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+        
+        .btn_small {
+            border: none;
+            background: none;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            background-color: #4680ff;
+            padding: 0 3px;
+            border-radius: 2px;
+        }
+        
+        .btn_small:focus {
+            outline: none;
+        }
+        
+        tr.line_tr {
+            height: 52px !important;
+        }
+    </style><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="7">
+    <script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script>
+    <link rel="stylesheet" href="./assets/layer.css" id="layuicss-layer">
+    <style type="text/css">
+        #_copy {
+            align-items: center;
+            background: #4494d5;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            width: 60px;
+            z-index: 1000
+        }
+        
+        #select-tooltip,
+        #sfModal,
+        .modal-backdrop,
+        div[id^=reader-helper] {
+            display: none!important
+        }
+        
+        .modal-open {
+            overflow: auto!important
+        }
+        
+        ._sf_adjust_body {
+            padding-right: 0!important
+        }
+        
+        .enable_copy_btns_div {
+            position: fixed;
+            width: 154px;
+            left: 10px;
+            top: 45%;
+            background: #e7f1ff;
+            border: 2px solid #4595d5;
+            font-weight: 600;
+            border-radius: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            z-index: 5000
+        }
+        
+        .enable_copy_btns_logo {
+            width: 100%;
+            background: #4595d5;
+            text-align: center;
+            font-size: 12px;
+            color: #e7f1ff;
+            line-height: 30px;
+            height: 30px
+        }
+        
+        .enable_copy_btns_btn {
+            display: block;
+            width: 128px;
+            height: 28px;
+            background: #7f5711;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            margin: 8px auto;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: .9
+        }
+        
+        .enable_copy_btns_btn:hover {
+            opacity: .8
+        }
+        
+        .enable_copy_btns_btn:active {
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body inmaintabuse="1" style="">
+    <!-- [ Pre-loader ] start -->
+
+    <!-- [ Pre-loader ] End -->
+
+    <style>
+        .top_contents {
+            float: right !important;
+        }
+        
+        .left-link {
+            width: 500px;
+            height: 80px;
+            padding: 3px 8px;
+            font-size: 13px;
+            background-color: #f7fafc;
+            line-height: 1.9;
+            float: left !important;
+            text-align: center !important;
+        }
+        
+        .right-pic {
+            margin-left: .5rem !important;
+            float: right !important;
+        }
+    </style>
+
+
+    <nav class="pcoded-navbar theme-horizontal">
+        <div class="container">
+            <div class="navbar-content">
+                <ul class="nav pcoded-inner-navbar">
+
+                    <li class="nav-item default-menu pcoded-trigger active">
+                        <a href="https://ping.aa1.cn/"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">在线Ping</span></a>
+                    </li>
+
+                    <!--<li class="nav-item">-->
+                    <!--    <a href="https://ping.aa1.cn/" title="在线ping、多地ping、持续ping"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">网站测速</span></a>-->
+                    <!--</li>-->
+
+                    <!--<li class="nav-item ">-->
+                    <!--    <a href="https://ping.aa1.cn/" title="在线tcping、多地tcping、持续tcping"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">在线Tcping</span></a>-->
+                    <!--</li>-->
+
+                    <li class="nav-item ">
+                        <a href="https://ssl.aa1.cn/" title="检测SSL"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">检测SSL</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/http/" title="网站测速"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">网站测速</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/" title="Tcping检测"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">Tcping检测（待开发）</span></a>
+                    </li>
+
+
+                    <li class="nav-item ">
+                        <a href="https://ping.aa1.cn/" title="DNS测试"><span class="pcoded-micon"><i class="feather icon-activity"></i></span><span class="pcoded-mtext">DNS测试（待开发）</span></a>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper container">
+            <div class="pcoded-content" id="screenshots">
+                <div class="pcoded-inner-content">
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <div class="page-header">
+                                <div class="page-block">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12">
+
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="https://ping.aa1.cn/"><i class="feather icon-home"></i>ping.aa1.cn</a></li>
+                                                <li class="breadcrumb-item"><a href="https://ping.aa1.cn/ping/">多地Ping、常规版、icmp协议、网络延迟测试</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ breadcrumb ] end -->
+                            <!-- [ Main Content ] start -->
+
+
+                            <div class="col-12 mb-3">
+                                <div class="px-sm-4 py-sm-4 bg-white rounded-lg shadow-sm" style="height: 165px;border: 1px solid #dadada;">
+                                    <div class="row align-items-center mt-3">
+                                        <div class="col">
+                                            <div class="row" style="margin-left: 75px;">
+                                                <!-- IP 输入框 -->
+                                                <input id="ip" type="text" class="form-control real_ip" value="" placeholder="请输入ip或域名，例如：www.baidu.com 、8.8.8.8" autocomplete="off" style="width: 600px;flex:none;">
+
+                                                <!-- 历史记录列表 -->
+                                                <div id="history-list" class="history-list" style="display:none;width: 600px; margin-left: 90px;">
+                                                    <ul id="history_ul" style="margin:0;padding:0;"></ul>
+                                                </div>
+
+                                                <!-- 开始测试按钮 -->
+                                                <button class="btn btn-primary has-ripple ml-2 mb-3 btn-radius" onclick="startTestWithUrlParam();">
+                                                    <i class="feather icon-play"></i> 开始测试
+                                                </button>
+                                                <button id="takeScreenshot" class="btn btn-warning ml-2 mb-3 btn-radius" style="min-width:126px;" onclick="select_screenshot('tcping8.com');">
+                                                    <i class="feather icon-camera"></i> 完整截图
+                                                </button>
+                                                <div style="display: flex;flex-wrap: nowrap;align-items: center;">
+
+                                                    <span class="text-muted" style="font-size: 13px; display: flex; align-items: center;"><i class="feather icon-home" style="font-size: 15px;"></i> 赞助商列表：<span class="text-danger mx-1">火毅盾 贰贰盾 数掘科技 亚洲云 阿沐云 迅马数据 One·degree 渺软公益CDN </span>排名不分先后
+
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                            <script>
+                                                function startTestWithUrlParam() {
+                                                    var ip = document.getElementById('ip').value; // 获取输入框中的值
+                                                    if (ip) {
+                                                        // 构建跳转的 URL，假设 url 为当前页面的基础 URL
+                                                        var redirectUrl = window.location.pathname + '?url=' + encodeURIComponent(ip);
+                                                        window.location.href = redirectUrl; // 跳转到新 URL
+                                                    } else {
+                                                        // alert("请输入有效的 IP 或域名");
+                                                        layer.msg('<span style=\'color:#fff\'> 请输入有效的IP或域名</span>', {
+                                                            time: 2000
+                                                        });
+                                                    }
+                                                }
+                                            </script>
+
+                                            <!--<div class="row" style="margin-left: 75px;">-->
+                                            <!-- 线路选择复选框 -->
+                                            <!--    <label class="custom-control custom-checkbox done-task">-->
+                                            <!--        <input type="checkbox" name="line" value="1" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国电信</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="2" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国联通</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="3" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国移动</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="4" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 中国多线</span>-->
+                                            <!--    </label>-->
+
+                                            <!--    <label class="custom-control custom-checkbox done-task ml-3">-->
+                                            <!--        <input type="checkbox" name="line" value="5" class="custom-control-input" checked="">-->
+                                            <!--        <span class="custom-control-label"> 海外线路</span>-->
+                                            <!--    </label>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="alert alert-danger text-center shadow-sm" role="alert">
+                                            <i class="feather icon-alert-triangle"></i> 想部署本项目？Ctrl+s 保存到本地 并上传至网站根目录 即可使用！
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 pl-2">
+                                        <div class="alert alert-warning text-center shadow-sm" role="alert">
+                                            <i class="feather icon-alert-triangle"></i> 持续的Ping测试可展示更为客观的网络状况
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="card mb-3" id="china_map" style="height: 550px; margin-bottom: 20px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;" _echarts_instance_="ec_1732243691272">
+                                            <div style="position: relative; overflow: hidden; width: 586px; height: 550px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="1172" height="1100" style="position: absolute; left: 0px; top: 0px; width: 586px; height: 550px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 pl-2">
+                                        <div class="card mb-3" style="height:550px;margin-bottom:20px;">
+
+                                            <ul class="nav nav-pills m-3" id="pills-tab" role="tablist" style="display:block;">
+                                                <li class="nav-item" style="float:left;">
+                                                    <a class="nav-link active" style="padding: 0 5px 1px 5px;" id="pills-home-tab" data-toggle="pill" href="https://ping.aa1.cn/ping/#china_region" role="tab" aria-controls="pills-home" aria-selected="true" oncontextmenu="return false;" ondragstart="return false;">监测节点综合分析</a>
+                                                </li>
+
+
+                                                <div class="small" style="float:right;"><span class="badge badge-light-primary" id="ip-count"></span> 个监测点参与测试，当前进度：
+                                                    <span id="complete_progress" class="progress" style="display:inline-flex;width: 180px;height: 12px;">
+<div class="progress-bar" role="progressbar" style="" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</span>
+                                                </div>
+
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade active show" id="china_region" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                                    <div class="table-responsive">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover nowrap small table-sm" id="operator-latency-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>运营商</th>
+                                                                        <th>最快</th>
+                                                                        <th>最慢</th>
+                                                                        <th>平均</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>中国电信</td>
+                                                                        <td id="dx_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国联通</td>
+                                                                        <td id="cu_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cu_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cu_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国移动</td>
+                                                                        <td id="cm_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cm_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="cm_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>中国多线</td>
+                                                                        <td id="dx_multi_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_multi_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="dx_multi_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>海外线路</td>
+                                                                        <td id="hw_fast">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="hw_slow">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                        <td id="hw_avg">
+                                                                            <div class="">--</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="tab-pane fade" id="global_region" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover nowrap small table-sm">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>区域</th>
+                                                                    <th>最快</th>
+                                                                    <th>最慢</th>
+                                                                    <th>平均</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td>全部节点</td>
+                                                                    <td id="global_fast">新加坡RS 33ms</td>
+                                                                    <td id="global_slow">莫斯科 286ms</td>
+                                                                    <td id="global_avg">124ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>亚洲</td>
+                                                                    <td id="asia_fast">新加坡RS 33ms</td>
+                                                                    <td id="asia_slow">印度孟买 92ms</td>
+                                                                    <td id="asia_avg">54ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>欧洲</td>
+                                                                    <td id="europe_fast">德国 257ms</td>
+                                                                    <td id="europe_slow">莫斯科 286ms</td>
+                                                                    <td id="europe_avg">271ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>北美洲</td>
+                                                                    <td id="north_fast">美国圣何塞 152ms</td>
+                                                                    <td id="north_slow">加拿大 221ms</td>
+                                                                    <td id="north_avg">186ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>南美洲</td>
+                                                                    <td id="south_fast">哥伦比亚 5ms</td>
+                                                                    <td id="south_slow">阿根廷 38ms</td>
+                                                                    <td id="south_avg">23ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>非洲</td>
+                                                                    <td id="africa_fast">中非 16ms</td>
+                                                                    <td id="africa_slow">喀麦隆 29ms</td>
+                                                                    <td id="africa_avg">22ms</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>大洋洲</td>
+                                                                    <td id="oceania_fast">澳大利亚 7ms</td>
+                                                                    <td id="oceania_slow">新西兰 62ms</td>
+                                                                    <td id="oceania_avg">43ms</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="" style="display:flex;">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header p-3">
+                                            <span class="float-left">
+                                                <span class="class_hr"></span>
+                                            <h5 class="ml-3">域名解析统计</h5>
+                                            <!-- IP 数量会动态更新 -->
+                                            <span class="badge badge-light-primary small" id="ip-count"></span>
+                                            <!-- 复制IP的按钮, data-clipboard-text 动态更新 -->
+                                            <a href="javascript:;" class="copy_ip" data-clipboard-text="">
+                                                <span class="badge badge-light-warning small ml-2">
+                                                        <i class="feather icon-copy"></i> 复制IP
+                                                    </span>
+                                            </a>
+                                            </span>
+                                            <span class="float-right mr-0 noselect">
+                                                <a class="pointer show_hide" onclick="ipv4_list_sh()">收起<i class="feather icon-chevrons-up"></i></a>
+                                            </span>
+                                        </div>
+                                        <div class="ipv4_list card-body p-2">
+                                            <ul class="ip_list m-0 p-0">
+                                                <!-- IP 列表会动态生成 -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="" style="display:flex;">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header p-3">
+                                            <span class="float-left">
+                                                <span class="class_hr"></span>
+                                            <h5 class="ml-3">Ping测试结果 赞助节点QQ：15001904</h5>
+
+                                            <!-- 线路选择 -->
+                                            <label class="Bee-radio done-task ml-3">
+                                                    <input type="radio" name="filter_line" value="all" class="custom-control-input" checked="">
+                                                    <span class="custom-control-label2"> 全部</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="1" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国电信</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="2" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国联通</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="3" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国移动</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="4" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 中国多线</span>
+                                                </label>
+                                            <label class="Bee-radio done-task ml-2">
+                                                    <input type="radio" name="filter_line" value="5" class="custom-control-input">
+                                                    <span class="custom-control-label2"> 海外线路</span>
+                                                </label>
+                                            </span>
+                                            <!--<label class="Bee-radio done-task ml-2">-->
+                                            <!--        <input type="radio" name="filter_line" value="6" class="custom-control-input">-->
+                                            <!--        <span class="custom-control-label2"> 响应超时</span>-->
+                                            <!--    </label>-->
+                                            <!--</span>-->
+                                            <label class="Bee-radio done-task ml-2 label_filter_ip" style="display:none">
+                                                <input type="radio" class="custom-control-input" checked="">
+                                                <span class="custom-control-label2 filter_ip">--</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="dt-responsive table-responsive">
+                                            <table id="simpletable" class="table table-hover nowrap small">
+                                                <thead>
+            <tr>
+                <th>检测点</th>
+                <th>响应IP</th>
+                <th id="ping-header" style="cursor: pointer;">延迟(ms)</th>
+
+                <th>TTL</th>
+                <th>发包</th>
+                <th>Byte</th>
+                <th>赞助商</th>
+            </tr>
+        </thead>
+                                                <tbody><tr node="济南市" node_type="3" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-success">移动</span> 济南市
+                </td>
+                <td class="real_ip" id="real_ip_济南市">113.108.81.189</td>
+                <td id="last_ping_济南市" style="color: green;">23ms</td>
+                <td id="last_ttl_济南市">51</td>
+                <td id="last_fb_济南市">
+                    1次
+                </td>
+                <td id="last_byte_济南市">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="https://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="湖北市｜一区" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 湖北市｜一区
+                </td>
+                <td class="real_ip" id="real_ip_湖北市｜一区">123.150.76.218</td>
+                <td id="last_ping_湖北市｜一区" style="color: green;">28.6ms</td>
+                <td id="last_ttl_湖北市｜一区">50</td>
+                <td id="last_fb_湖北市｜一区">
+                    1次
+                </td>
+                <td id="last_byte_湖北市｜一区">
+                    64
+                </td>
+                <td id="last_zzs_亚洲云">
+                    <a href="http://asiayun.com" target="_blank">亚洲云</a>
+                </td>
+
+            </tr><tr node="湖北市｜二区" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 湖北市｜二区
+                </td>
+                <td class="real_ip" id="real_ip_湖北市｜二区">123.150.76.218</td>
+                <td id="last_ping_湖北市｜二区" style="color: green;">27.6ms</td>
+                <td id="last_ttl_湖北市｜二区">51</td>
+                <td id="last_fb_湖北市｜二区">
+                    1次
+                </td>
+                <td id="last_byte_湖北市｜二区">
+                    64
+                </td>
+                <td id="last_zzs_007idc">
+                    <a href="http://007idc.cn" target="_blank">007idc</a>
+                </td>
+
+            </tr><tr node="长沙市" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 长沙市
+                </td>
+                <td class="real_ip" id="real_ip_长沙市">113.108.81.189</td>
+                <td id="last_ping_长沙市" style="color: green;">23.6ms</td>
+                <td id="last_ttl_长沙市">53</td>
+                <td id="last_fb_长沙市">
+                    1次
+                </td>
+                <td id="last_byte_长沙市">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="https://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="厦门市｜一区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 厦门市｜一区
+                </td>
+                <td class="real_ip" id="real_ip_厦门市｜一区">123.150.76.218</td>
+                <td id="last_ping_厦门市｜一区" style="color: green;">35.5ms</td>
+                <td id="last_ttl_厦门市｜一区">49</td>
+                <td id="last_fb_厦门市｜一区">
+                    1次
+                </td>
+                <td id="last_byte_厦门市｜一区">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="http://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="厦门市｜二区" node_type="2" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-warning">联通</span> 厦门市｜二区
+                </td>
+                <td class="real_ip" id="real_ip_厦门市｜二区">123.150.76.218</td>
+                <td id="last_ping_厦门市｜二区" style="color: green;">38.4ms</td>
+                <td id="last_ttl_厦门市｜二区">42</td>
+                <td id="last_fb_厦门市｜二区">
+                    1次
+                </td>
+                <td id="last_byte_厦门市｜二区">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="http://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="厦门市｜三区" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 厦门市｜三区
+                </td>
+                <td class="real_ip" id="real_ip_厦门市｜三区">123.150.76.218</td>
+                <td id="last_ping_厦门市｜三区" style="color: green;">38.4ms</td>
+                <td id="last_ttl_厦门市｜三区">42</td>
+                <td id="last_fb_厦门市｜三区">
+                    1次
+                </td>
+                <td id="last_byte_厦门市｜三区">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="http://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="宁波市" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 宁波市
+                </td>
+                <td class="real_ip" id="real_ip_宁波市">123.150.76.218</td>
+                <td id="last_ping_宁波市" style="color: green;">27.6ms</td>
+                <td id="last_ttl_宁波市">49</td>
+                <td id="last_fb_宁波市">
+                    1次
+                </td>
+                <td id="last_byte_宁波市">
+                    64
+                </td>
+                <td id="last_zzs_数掘科技">
+                    <a href="http://gfvps.cn" target="_blank">数掘科技</a>
+                </td>
+
+            </tr><tr node="内蒙古" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 内蒙古
+                </td>
+                <td class="real_ip" id="real_ip_内蒙古">123.150.76.218</td>
+                <td id="last_ping_内蒙古" style="color: green;">12.7ms</td>
+                <td id="last_ttl_内蒙古">53</td>
+                <td id="last_fb_内蒙古">
+                    1次
+                </td>
+                <td id="last_byte_内蒙古">
+                    64
+                </td>
+                <td id="last_zzs_阿沐云">
+                    <a href="https://amuyun.cn" target="_blank">阿沐云</a>
+                </td>
+
+            </tr><tr node="天津市" node_type="3" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-success">移动</span> 天津市
+                </td>
+                <td class="real_ip" id="real_ip_天津市">123.150.76.218</td>
+                <td id="last_ping_天津市" style="color: green;">48ms</td>
+                <td id="last_ttl_天津市">52</td>
+                <td id="last_fb_天津市">
+                    1次
+                </td>
+                <td id="last_byte_天津市">
+                    64
+                </td>
+                <td id="last_zzs_数掘科技">
+                    <a href="http://gfvps.cn" target="_blank">数掘科技</a>
+                </td>
+
+            </tr><tr node="北京市｜一区" node_type="2" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-warning">联通</span> 北京市｜一区
+                </td>
+                <td class="real_ip" id="real_ip_北京市｜一区">203.205.254.157</td>
+                <td id="last_ping_北京市｜一区" style="color: red;">307ms</td>
+                <td id="last_ttl_北京市｜一区">44</td>
+                <td id="last_fb_北京市｜一区">
+                    1次
+                </td>
+                <td id="last_byte_北京市｜一区">
+                    64
+                </td>
+                <td id="last_zzs_夏柔公益">
+                    <a href="http://www.aa1.cn" target="_blank">夏柔公益</a>
+                </td>
+
+            </tr><tr node="北京市｜二区" node_type="2" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-warning">联通</span> 北京市｜二区
+                </td>
+                <td class="real_ip" id="real_ip_北京市｜二区">203.205.254.157</td>
+                <td id="last_ping_北京市｜二区" style="color: red;">326ms</td>
+                <td id="last_ttl_北京市｜二区">43</td>
+                <td id="last_fb_北京市｜二区">
+                    1次
+                </td>
+                <td id="last_byte_北京市｜二区">
+                    64
+                </td>
+                <td id="last_zzs_夏柔公益">
+                    <a href="http://www.aa1.cn" target="_blank">夏柔公益</a>
+                </td>
+
+            </tr><tr node="北京市｜三区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 北京市｜三区
+                </td>
+                <td class="real_ip" id="real_ip_北京市｜三区">113.108.81.189</td>
+                <td id="last_ping_北京市｜三区" style="color: green;">26.4ms</td>
+                <td id="last_ttl_北京市｜三区">47</td>
+                <td id="last_fb_北京市｜三区">
+                    1次
+                </td>
+                <td id="last_byte_北京市｜三区">
+                    64
+                </td>
+                <td id="last_zzs_渺软公益CDN">
+                    <a href="https://cdn.onmicrosoft.cn" target="_blank">渺软公益CDN</a>
+                </td>
+
+            </tr><tr node="北京市｜四区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 北京市｜四区
+                </td>
+                <td class="real_ip" id="real_ip_北京市｜四区">203.205.254.157</td>
+                <td id="last_ping_北京市｜四区" style="color: red;">357ms</td>
+                <td id="last_ttl_北京市｜四区">36</td>
+                <td id="last_fb_北京市｜四区">
+                    1次
+                </td>
+                <td id="last_byte_北京市｜四区">
+                    64
+                </td>
+                <td id="last_zzs_迅马数据">
+                    <a href="https://www.56dun.com" target="_blank">迅马数据</a>
+                </td>
+
+            </tr><tr node="香港｜一区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 香港｜一区
+                </td>
+                <td class="real_ip" id="real_ip_香港｜一区">203.205.254.157</td>
+                <td id="last_ping_香港｜一区" style="color: green;">0ms</td>
+                <td id="last_ttl_香港｜一区">0</td>
+                <td id="last_fb_香港｜一区">
+                    1次
+                </td>
+                <td id="last_byte_香港｜一区">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="https://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="香港｜二区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 香港｜二区
+                </td>
+                <td class="real_ip" id="real_ip_香港｜二区">203.205.254.157</td>
+                <td id="last_ping_香港｜二区" style="color: green;">0ms</td>
+                <td id="last_ttl_香港｜二区">0</td>
+                <td id="last_fb_香港｜二区">
+                    1次
+                </td>
+                <td id="last_byte_香港｜二区">
+                    64
+                </td>
+                <td id="last_zzs_15元美国高防秒解服务器">
+                    <a href="https://idc.ndun.cc" target="_blank">15元美国高防秒解服务器</a>
+                </td>
+
+            </tr><tr node="香港｜三区" node_type="4" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-danger">多线</span> 香港｜三区
+                </td>
+                <td class="real_ip" id="real_ip_香港｜三区">123.150.76.218</td>
+                <td id="last_ping_香港｜三区" style="color: rgb(255, 170, 49);">81ms</td>
+                <td id="last_ttl_香港｜三区">44</td>
+                <td id="last_fb_香港｜三区">
+                    1次
+                </td>
+                <td id="last_byte_香港｜三区">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="https://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="美国｜一区" node_type="5" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-secondary">海外</span> 美国｜一区
+                </td>
+                <td class="real_ip" id="real_ip_美国｜一区">123.150.76.218</td>
+                <td id="last_ping_美国｜一区" style="color: red;">162ms</td>
+                <td id="last_ttl_美国｜一区">46</td>
+                <td id="last_fb_美国｜一区">
+                    1次
+                </td>
+                <td id="last_byte_美国｜一区">
+                    64
+                </td>
+                <td id="last_zzs_15元美国高防秒解服务器">
+                    <a href="https://idc.ndun.cc" target="_blank">15元美国高防秒解服务器</a>
+                </td>
+
+            </tr><tr node="新加坡" node_type="5" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-secondary">海外</span> 新加坡
+                </td>
+                <td class="real_ip" id="real_ip_新加坡">203.205.254.157</td>
+                <td id="last_ping_新加坡" style="color: green;">33.2ms</td>
+                <td id="last_ttl_新加坡">49</td>
+                <td id="last_fb_新加坡">
+                    1次
+                </td>
+                <td id="last_byte_新加坡">
+                    64
+                </td>
+                <td id="last_zzs_火毅盾">
+                    <a href="https://hydun.com" target="_blank">火毅盾</a>
+                </td>
+
+            </tr><tr node="广西测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 广西测试节点
+                </td>
+                <td class="real_ip" id="real_ip_广西测试节点">113.108.81.189</td>
+                <td id="last_ping_广西测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_广西测试节点">51</td>
+                <td id="last_fb_广西测试节点">
+                    1次
+                </td>
+                <td id="last_byte_广西测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="西藏测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 西藏测试节点
+                </td>
+                <td class="real_ip" id="real_ip_西藏测试节点">113.108.81.189</td>
+                <td id="last_ping_西藏测试节点" style="color: green;">23.1ms</td>
+                <td id="last_ttl_西藏测试节点">51</td>
+                <td id="last_fb_西藏测试节点">
+                    1次
+                </td>
+                <td id="last_byte_西藏测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="甘肃测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 甘肃测试节点
+                </td>
+                <td class="real_ip" id="real_ip_甘肃测试节点">113.108.81.189</td>
+                <td id="last_ping_甘肃测试节点" style="color: green;">23.1ms</td>
+                <td id="last_ttl_甘肃测试节点">51</td>
+                <td id="last_fb_甘肃测试节点">
+                    1次
+                </td>
+                <td id="last_byte_甘肃测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="青海测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 青海测试节点
+                </td>
+                <td class="real_ip" id="real_ip_青海测试节点">123.150.76.218</td>
+                <td id="last_ping_青海测试节点" style="color: green;">28.5ms</td>
+                <td id="last_ttl_青海测试节点">50</td>
+                <td id="last_fb_青海测试节点">
+                    1次
+                </td>
+                <td id="last_byte_青海测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="新疆测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 新疆测试节点
+                </td>
+                <td class="real_ip" id="real_ip_新疆测试节点">113.108.81.189</td>
+                <td id="last_ping_新疆测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_新疆测试节点">51</td>
+                <td id="last_fb_新疆测试节点">
+                    1次
+                </td>
+                <td id="last_byte_新疆测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="山西测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 山西测试节点
+                </td>
+                <td class="real_ip" id="real_ip_山西测试节点">123.150.76.218</td>
+                <td id="last_ping_山西测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_山西测试节点">50</td>
+                <td id="last_fb_山西测试节点">
+                    1次
+                </td>
+                <td id="last_byte_山西测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="陕西测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 陕西测试节点
+                </td>
+                <td class="real_ip" id="real_ip_陕西测试节点">113.108.81.189</td>
+                <td id="last_ping_陕西测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_陕西测试节点">51</td>
+                <td id="last_fb_陕西测试节点">
+                    1次
+                </td>
+                <td id="last_byte_陕西测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="江苏测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 江苏测试节点
+                </td>
+                <td class="real_ip" id="real_ip_江苏测试节点">113.108.81.189</td>
+                <td id="last_ping_江苏测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_江苏测试节点">51</td>
+                <td id="last_fb_江苏测试节点">
+                    1次
+                </td>
+                <td id="last_byte_江苏测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="安徽测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 安徽测试节点
+                </td>
+                <td class="real_ip" id="real_ip_安徽测试节点">123.150.76.218</td>
+                <td id="last_ping_安徽测试节点" style="color: green;">28.5ms</td>
+                <td id="last_ttl_安徽测试节点">50</td>
+                <td id="last_fb_安徽测试节点">
+                    1次
+                </td>
+                <td id="last_byte_安徽测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="河南测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 河南测试节点
+                </td>
+                <td class="real_ip" id="real_ip_河南测试节点">113.108.81.189</td>
+                <td id="last_ping_河南测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_河南测试节点">51</td>
+                <td id="last_fb_河南测试节点">
+                    1次
+                </td>
+                <td id="last_byte_河南测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="吉林测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 吉林测试节点
+                </td>
+                <td class="real_ip" id="real_ip_吉林测试节点">123.150.76.218</td>
+                <td id="last_ping_吉林测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_吉林测试节点">50</td>
+                <td id="last_fb_吉林测试节点">
+                    1次
+                </td>
+                <td id="last_byte_吉林测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="四川测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 四川测试节点
+                </td>
+                <td class="real_ip" id="real_ip_四川测试节点">113.108.81.189</td>
+                <td id="last_ping_四川测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_四川测试节点">51</td>
+                <td id="last_fb_四川测试节点">
+                    1次
+                </td>
+                <td id="last_byte_四川测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="云南测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 云南测试节点
+                </td>
+                <td class="real_ip" id="real_ip_云南测试节点">123.150.76.218</td>
+                <td id="last_ping_云南测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_云南测试节点">50</td>
+                <td id="last_fb_云南测试节点">
+                    1次
+                </td>
+                <td id="last_byte_云南测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="贵州测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 贵州测试节点
+                </td>
+                <td class="real_ip" id="real_ip_贵州测试节点">113.108.81.189</td>
+                <td id="last_ping_贵州测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_贵州测试节点">51</td>
+                <td id="last_fb_贵州测试节点">
+                    1次
+                </td>
+                <td id="last_byte_贵州测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="江西测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 江西测试节点
+                </td>
+                <td class="real_ip" id="real_ip_江西测试节点">123.150.76.218</td>
+                <td id="last_ping_江西测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_江西测试节点">50</td>
+                <td id="last_fb_江西测试节点">
+                    1次
+                </td>
+                <td id="last_byte_江西测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="河北测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 河北测试节点
+                </td>
+                <td class="real_ip" id="real_ip_河北测试节点">113.108.81.189</td>
+                <td id="last_ping_河北测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_河北测试节点">51</td>
+                <td id="last_fb_河北测试节点">
+                    1次
+                </td>
+                <td id="last_byte_河北测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="宁夏测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 宁夏测试节点
+                </td>
+                <td class="real_ip" id="real_ip_宁夏测试节点">113.108.81.189</td>
+                <td id="last_ping_宁夏测试节点" style="color: green;">23.2ms</td>
+                <td id="last_ttl_宁夏测试节点">51</td>
+                <td id="last_fb_宁夏测试节点">
+                    1次
+                </td>
+                <td id="last_byte_宁夏测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="重庆测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 重庆测试节点
+                </td>
+                <td class="real_ip" id="real_ip_重庆测试节点">123.150.76.218</td>
+                <td id="last_ping_重庆测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_重庆测试节点">50</td>
+                <td id="last_fb_重庆测试节点">
+                    1次
+                </td>
+                <td id="last_byte_重庆测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="广东测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 广东测试节点
+                </td>
+                <td class="real_ip" id="real_ip_广东测试节点">123.150.76.218</td>
+                <td id="last_ping_广东测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_广东测试节点">50</td>
+                <td id="last_fb_广东测试节点">
+                    1次
+                </td>
+                <td id="last_byte_广东测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="辽宁测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 辽宁测试节点
+                </td>
+                <td class="real_ip" id="real_ip_辽宁测试节点">123.150.76.218</td>
+                <td id="last_ping_辽宁测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_辽宁测试节点">50</td>
+                <td id="last_fb_辽宁测试节点">
+                    1次
+                </td>
+                <td id="last_byte_辽宁测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="黑龙江测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 黑龙江测试节点
+                </td>
+                <td class="real_ip" id="real_ip_黑龙江测试节点">113.108.81.189</td>
+                <td id="last_ping_黑龙江测试节点" style="color: green;">23ms</td>
+                <td id="last_ttl_黑龙江测试节点">51</td>
+                <td id="last_fb_黑龙江测试节点">
+                    1次
+                </td>
+                <td id="last_byte_黑龙江测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr><tr node="海南测试节点" node_type="1" class="node_tr" offline="0">
+                <td class="text-left">
+                    <span class="badge badge-info">电信</span> 海南测试节点
+                </td>
+                <td class="real_ip" id="real_ip_海南测试节点">123.150.76.218</td>
+                <td id="last_ping_海南测试节点" style="color: green;">28.6ms</td>
+                <td id="last_ttl_海南测试节点">50</td>
+                <td id="last_fb_海南测试节点">
+                    1次
+                </td>
+                <td id="last_byte_海南测试节点">
+                    64
+                </td>
+                <td id="last_zzs_测试节点">
+                    <a href="https://ping.aa1.cn" target="_blank">测试节点</a>
+                </td>
+
+            </tr></tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- [ Main Content ] end -->
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="card-body justify-content-between align-items-center">
+            <span class="d-flex justify-content-center">友情链接： 
+                <span class="ml-2"><a href="https://ssl.aa1.cn/" target="_blank">SSL检测</a></span>
+            <span class="ml-2"><a href="https://cesu.net/" target="_blank">测速网</a></span>
+            <span class="ml-2"><a href="https://hydun.com/" target="_blank">火毅盾</a></span>
+            <span class="ml-2"><a href="https://gfvps.cn/" target="_blank">数掘科技</a></span>
+            <span class="ml-2"><a href="https://www.aa1.cn/" target="_blank">夏柔公益</a></span>
+            <span class="ml-2"><a href="https://007idc.cn/" target="_blank">007IDC</a></span>
+            <span class="ml-2"><a href="https://amuyun.cn/" target="_blank">阿沐云</a></span>
+            </span>
+            <span class="d-flex justify-content-center">Copyright © 2024 在线Ping检测<span class="ml-2"><a href="https://beian.miit.gov.cn/" target="beian_blank"></a></span></span>
+        </div>
+    </div>
+    <script src="./assets/jquery-1.10.2.min.js"></script>
+    <script src="./assets/clipboard.min.js"></script>
+    <!-- Matomo -->
+
+    <!-- Required Js -->
+    <script src="./assets/vendor-all.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <script src="./assets/ripple.js"></script>
+    <script src="./assets/prism.js"></script>
+    <script src="./assets/dom-to-image.min.js"></script>
+    <script src="./assets/FileSaver.min.js"></script>
+    <script src="./assets/isotope.pkgd.min.js"></script>
+    <script src="./assets/layer.js"></script>
+    <script src="./assets/index.js"></script>
+    <script src="./assets/jquery.cookie.js"></script>
+    <script src="./assets/echarts.min.js"></script>
+    <script src="./assets/china.js"></script>
+    <!-- End Matomo Code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        let socket;
+        let cityList = [];
+        let messageCount = 0; // 初始化消息计数器
+        let tableBody = document.querySelector("#simpletable tbody");
+
+        // 获取 URL 参数中的域名
+        function getUrlParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // 连接 WebSocket
+        function connectWebSocket() {
+            const domain = getUrlParam('url');
+
+            if (!domain) {
+                console.error("URL 参数中缺少 'url'，未连接 WebSocket");
+                layer.msg('<span style="color:#fff">请开始第一次的PING之旅吧</span>', {
+                    time: 2000
+                });
+                return;
+            }
+
+            socket = new WebSocket("wss://wss.ping.aa1.cn:8765");
+
+            // 连接成功
+            socket.onopen = () => {
+                console.log("连接成功！等待数据...");
+                cityList = [];
+                tableBody.innerHTML = ""; // 清空表格
+
+                // 开始请求数据
+                requestData(domain);
+            };
+
+            // 接收 WebSocket 数据
+            socket.onmessage = (event) => {
+                let data = JSON.parse(event.data);
+
+                // 接收到城市列表
+                if (data.status === "success" && data.city_list) {
+                    cityList = data.city_list;
+                    displayCityList(cityList);
+                    // alert(data.jc_Count);
+                    jc_Count_i = data.jc_Count;
+                }
+
+                // 接收到每个城市的 Ping 测试结果
+                if (data.status === "success" && data.results) {
+                    updatePingResults(data.results);
+                    messageCount++;
+
+                    // 更新监测点计数
+                    const jcCount = jc_Count_i;
+                    document.getElementById("ip-count").textContent = jcCount;
+
+                    // 动态更新进度条
+                    const progress = Math.min((messageCount / jcCount) * 100, 100); // 计算百分比
+                    const progressBar = document.querySelector("#complete_progress .progress-bar");
+                    progressBar.style.width = `${progress}%`;
+                    progressBar.setAttribute("aria-valuenow", progress);
+                    progressBar.textContent = `${Math.round(progress)}%`;
+
+                    // 检测是否完成
+                    if (messageCount >= jcCount) {
+                        // alert("检测完毕！");
+                        layer.msg('<span style=\'color:#fff\'>检测完毕，大佬请查阅！</span>', {
+                            time: 2000
+                        });
+                    }
+                }
+
+                // 错误信息
+                if (data.status === "error") {
+                    console.error("Error:", data.msg);
+                }
+            };
+
+            // WebSocket 连接关闭
+            socket.onclose = () => {
+                console.log("WebSocket连接已关闭");
+                setTimeout(connectWebSocket, 5000); // 尝试重新连接
+            };
+
+            socket.onerror = (error) => {
+                console.error("WebSocket 错误:", error);
+            };
+        }
+
+
+        // 请求数据（将域名传递给 WebSocket）
+        function requestData(domain) {
+            if (domain === "") {
+                alert("请输入有效的域名或IP！");
+                return;
+            }
+
+            // 确保 WebSocket 已连接并处于打开状态
+            if (socket.readyState === WebSocket.OPEN) {
+                socket.send(JSON.stringify({
+                    action: "ping",
+                    domain: domain
+                }));
+
+                console.log("发送ping请求给 WebSocket服务器：", domain);
+            } else {
+                console.error("WebSocket 连接未打开，无法发送请求！");
+            }
+        }
+
+        // 页面加载时初始化 WebSocket 连接
+        window.onload = connectWebSocket;
+
+
+        // 显示城市和运营商列表
+        function displayCityList(cities) {
+            let tableHeader = document.querySelector("#simpletable thead");
+            tableHeader.innerHTML = `
+            <tr>
+                <th>检测点</th>
+                <th>响应IP</th>
+                <th id="ping-header" style="cursor: pointer;">延迟(ms)</th>
+
+                <th>TTL</th>
+                <th>发包</th>
+                <th>Byte</th>
+                <th>赞助商</th>
+            </tr>
+        `;
+
+            // 清空表格
+            tableBody.innerHTML = "";
+
+            // 根据城市列表动态生成表格
+            cities.forEach(city => {
+                let tr = document.createElement('tr');
+                tr.setAttribute('node', city.city);
+                tr.setAttribute('node_type', city.node_type);
+                tr.setAttribute('class', 'node_tr');
+                tr.setAttribute('offline', '0');
+
+                // 根据 city.operator 设置不同的 badge 样式
+                let badgeClass = '';
+                switch (city.operator) {
+                    case '电信':
+                        badgeClass = 'badge badge-info'; // 电信为 badge-info
+                        break;
+                    case '联通':
+                        badgeClass = 'badge badge-warning'; // 联通为 badge-danger
+                        break;
+                    case '移动':
+                        badgeClass = 'badge badge-success'; // 联通为 badge-danger
+                        break;
+                    case '多线':
+                        badgeClass = 'badge badge-danger'; // 联通为 badge-danger
+                        break;
+                    default:
+                        badgeClass = 'badge badge-secondary'; // 默认设置为其他样式
+                        break;
+                }
+
+                tr.innerHTML = `
+                <td class="text-left">
+                    <span class="${badgeClass}">${city.operator}</span> ${city.city}
+                </td>
+                <td class="real_ip" id="real_ip_${city.city}"><div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status"><span class="sr-only">Loading...</span></div></td>
+                <td id="last_ping_${city.city}"><div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status"><span class="sr-only">Loading...</span></div></td>
+                <td id="last_ttl_${city.city}"><div class="spinner-border text-primary" style="width:1.2rem;height:1.2rem;" role="status"><span class="sr-only">Loading...</span></div></td>
+                <td id="last_fb_${city.city}">
+                    1次
+                </td>
+                <td id="last_byte_${city.city}">
+                    64
+                </td>
+                <td id="last_zzs_${city.zzs}">
+                    <a href="${city.zzs_url}" target="_blank">${city.zzs}</a>
+                </td>
+
+            `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // 存储 IP 地址和其出现次数
+        let ipCounts = {};
+
+
+
+
+        // 更新所有城市的 Ping 测试结果
+        function updatePingResults(results) {
+            console.log("Received results:", results); // 打印数据查看结构
+
+            results.forEach(result => {
+                const province = result.province.trim(); // 省份名称
+                const city = result.city.trim(); // 城市名称
+                const time = parseFloat(result.time); // 响应时间（转为数字）
+                const ttl = result.ttl.trim(); // TTL
+                const operator = result.operator ? result.operator.trim() : '未知运营商'; // 运营商名称
+
+                // 根据运营商分类存储延迟时间
+                switch (operator) {
+                    case '电信':
+                        if (time > 0) latencyData.dx.push({
+                            time,
+                            city
+                        });
+                        break;
+                    case '联通':
+                        if (time > 0) latencyData.cu.push({
+                            time,
+                            city
+                        });
+                        break;
+                    case '移动':
+                        if (time > 0) latencyData.cm.push({
+                            time,
+                            city
+                        });
+                        break;
+                    case '多线':
+                        if (time > 0) latencyData.dx_multi.push({
+                            time,
+                            city
+                        });
+                        break;
+                    case '海外':
+                        if (time > 0) latencyData.hw.push({
+                            time,
+                            city
+                        });
+                        break;
+                    default:
+                        console.log(`无法识别的运营商: ${operator}`);
+                        break;
+                }
+
+                // 查找省份对象
+                const provinceData = mydata.find(item => item.name === province);
+
+                if (provinceData) {
+                    // 确保 provinceData.cityes 是一个数组
+                    if (!Array.isArray(provinceData.cityes)) {
+                        provinceData.cityes = [];
+                    }
+
+                    // 检查是否已有该城市数据
+                    let cityData = provinceData.cityes.find(cityEntry => cityEntry.name === city);
+
+                    if (cityData) {
+                        // 更新城市的响应时间和运营商
+                        cityData.time = time;
+                        cityData.operator = operator;
+                    } else {
+                        // 如果没有该城市数据，新增
+                        provinceData.cityes.push({
+                            name: city,
+                            time: time,
+                            operator: operator
+                        });
+                    }
+
+                    // 计算该省份的平均响应时间
+                    const validTimes = provinceData.cityes
+                        .map(cityEntry => cityEntry.time)
+                        .filter(t => t > 0); // 只统计有效时间
+
+                    if (validTimes.length > 0) {
+                        const averageTime = (
+                            validTimes.reduce((sum, t) => sum + t, 0) / validTimes.length
+                        ).toFixed(2); // 计算平均值
+
+                        // 更新该省的 value，用于地图渲染
+                        provinceData.value = parseFloat(averageTime);
+                    } else {
+                        // 如果没有有效数据，设为默认值 0
+                        provinceData.value = 0;
+                    }
+                }
+
+                // 更新表格中的城市响应时间和 IP
+                updateCityInfo(city, time, result.ip, ttl);
+            });
+
+            // 更新地图渲染
+            china_map.setOption({
+                series: [{
+                    data: mydata // 使用更新后的 mydata
+                }]
+            });
+
+            // 计算并显示每个运营商的最慢、最快和平均延迟
+            updateOperatorLatency();
+        }
+
+        // 更新城市信息（响应时间、IP 和 TTL）
+        function updateCityInfo(city, time, ip, ttl) {
+            const row = document.querySelector(`#city-info-table tr[data-city='${city}']`);
+            if (row) {
+                row.querySelector('.city-time').textContent = time;
+                row.querySelector('.city-ip').textContent = ip;
+                row.querySelector('.city-ttl').textContent = ttl;
+            } else {
+                const newRow = document.createElement('tr');
+                newRow.setAttribute('data-city', city);
+                newRow.innerHTML = `
+            <td>${city}</td>
+            <td class="city-time">${time}</td>
+            <td class="city-ip">${ip}</td>
+            <td class="city-ttl">${ttl}</td>
+        `;
+                document.querySelector('#city-info-table tbody').appendChild(newRow);
+            }
+        }
+
+        // 计算并显示每个运营商的最慢、最快和平均延迟
+        function updateOperatorLatency() {
+            Object.keys(latencyData).forEach(key => {
+                // 过滤掉无效的 time=0 值
+                const validEntries = latencyData[key].filter(entry => entry.time > 0); // 只保留有效数据
+                console.log(`运营商: ${key}, 有效延迟数据:`, validEntries);
+
+                if (validEntries.length > 0) {
+                    // 找到最快和最慢的条目
+                    const fastestEntry = validEntries.reduce((min, entry) => entry.time < min.time ? entry : min);
+                    const slowestEntry = validEntries.reduce((max, entry) => entry.time > max.time ? entry : max);
+
+                    // 提取相关数据
+                    const fastestTime = fastestEntry.time.toFixed(2);
+                    const fastestCity = fastestEntry.city;
+                    const slowestTime = slowestEntry.time.toFixed(2);
+                    const slowestCity = slowestEntry.city;
+
+                    // 计算平均值
+                    const averageTime = (
+                        validEntries.reduce((sum, entry) => sum + entry.time, 0) / validEntries.length
+                    ).toFixed(2);
+
+                    // 更新表格的值
+                    const fastElement = document.getElementById(`${key}_fast`);
+                    const slowElement = document.getElementById(`${key}_slow`);
+                    const avgElement = document.getElementById(`${key}_avg`);
+
+                    if (fastElement && slowElement && avgElement) {
+                        fastElement.textContent = `${fastestTime} ms (${fastestCity})`;
+                        slowElement.textContent = `${slowestTime} ms (${slowestCity})`;
+                        avgElement.textContent = `${averageTime} ms`;
+                    }
+                } else {
+                    // 如果没有有效数据，显示 "N/A"
+                    const fastElement = document.getElementById(`${key}_fast`);
+                    const slowElement = document.getElementById(`${key}_slow`);
+                    const avgElement = document.getElementById(`${key}_avg`);
+
+                    if (fastElement && slowElement && avgElement) {
+                        fastElement.textContent = "N/A";
+                        slowElement.textContent = "N/A";
+                        avgElement.textContent = "N/A";
+                    }
+                }
+            });
+        }
+
+        // 初始化延迟数据对象
+        let latencyData = {
+            "dx": [], // 电信
+            "cu": [], // 联通
+            "cm": [], // 移动
+            "dx_multi": [], // 多线
+            "hw": [] // 海外
+        };
+
+        // 记录 IP 出现的次数
+        const ipCounts2 = {};
+
+        // 更新城市信息（响应时间、IP 和 IP 数量）
+        function updateCityInfo(city, time, ip, ttl) {
+            if (!city) return;
+
+            // 获取对应城市的元素
+            const ipElement = document.getElementById(`real_ip_${city}`);
+
+
+            const pingElement = document.getElementById(`last_ping_${city}`);
+            const ttlElement = document.getElementById(`last_ttl_${city}`);
+
+            // 如果元素存在，则更新其内容
+            if (ipElement && pingElement && ttlElement) {
+                ipElement.innerHTML = ip || "<font color='red'>检测错误</font>";
+
+                // 更新内容
+                pingElement.textContent = `${time}ms`;
+
+                // 根据 time 设置字体颜色
+                if (time < 50.9) {
+                    pingElement.style.color = 'green';
+                }
+                if (time > 50.9 && time < 100) {
+                    pingElement.style.color = '#ffaa31';
+                }
+                if (time > 100.1 && time < 30000) {
+                    pingElement.style.color = 'red';
+                }
+
+                ttlElement.textContent = `${ttl}`;
+
+                // 记录有效的 IP 地址
+                if (ip && ip !== "未知" && !ipCounts2[ip]) {
+                    ipCounts2[ip] = 1; // 确保不重复记录同一个 IP
+                }
+
+                // 更新 IP 列表和 IP 数量显示
+                updateIPList();
+            }
+        }
+
+        // 更新 IP 列表和 IP 数量
+        function updateIPList() {
+            let ipListContainer = document.querySelector(".ip_list");
+            ipListContainer.innerHTML = "";
+
+            let totalCities = 0;
+            Object.keys(ipCounts2).forEach(ip => {
+                totalCities += ipCounts2[ip];
+            });
+
+            let ipCountBadge = document.getElementById("ip-count");
+            if (ipCountBadge) {
+                ipCountBadge.textContent = totalCities;
+            }
+
+            Object.keys(ipCounts2).forEach(ip => {
+                let count = ipCounts2[ip];
+                let percentage = ((count / totalCities) * 100).toFixed(2);
+                let ipItem = document.createElement('a');
+                ipItem.setAttribute('title', `点击筛选`);
+                ipItem.setAttribute('class', 'pointer noselect');
+                ipItem.setAttribute('onclick', `filter_ip('${ip}')`);
+                ipItem.innerHTML = `
+                <li><span class="ml-3">${ip}</span><span class="text-primary float-right mr-3">${percentage}%</span></li>
+            `;
+                ipListContainer.appendChild(ipItem);
+            });
+
+            let clipboardTextElement = document.querySelector(".copy_ip");
+            if (clipboardTextElement) {
+                // 获取所有有效 IP 地址
+                let ipList = Object.keys(ipCounts2).filter(ip => ip !== "未知");
+
+                if (ipList.length > 0) {
+                    // 将 IP 地址用换行符拼接
+                    let clipboardText = ipList.join("\n");
+                    clipboardTextElement.setAttribute('data-clipboard-text', clipboardText);
+                }
+            }
+
+        }
+
+
+        // 在输入框输入后触发ping测试（可选）
+        // document.getElementById("ip").addEventListener("keyup", function(event) {
+        //     if (event.key === "Enter") {
+        //         check_form();
+        //     }
+        // });
+
+
+        var ipv4_list_arr = [];
+        var task_now = 0;
+        var timeout_list = '';
+        var check_node_num = 0;
+        var complete_node_num = 0;
+        var time_out_num = 0;
+
+
+        $(function() {
+            var clipboards = new ClipboardJS('.copy_ip');
+            clipboards.on('success', function(e) {
+                layer.msg('<span style=\'color:#fff\'>IP复制成功</span>', {
+                    time: 2000
+                });
+            });
+
+
+        });
+
+
+        var china_fast = new Array()
+        for (var i = 0; i < 34; i++) {
+            china_fast[i] = 9999;
+        }
+
+        var mydata = [{
+            name: '北京',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '天津',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '上海',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '重庆',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '河北',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '河南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '云南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '辽宁',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '黑龙江',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '湖南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '安徽',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '山东',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '新疆',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '江苏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '浙江',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '江西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '湖北',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '广西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '甘肃',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '山西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '内蒙古',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '陕西',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '吉林',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '福建',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '贵州',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '广东',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '青海',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '西藏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '四川',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '宁夏',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '海南',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '台湾',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '香港',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '澳门',
+            value: 100000,
+            cityes: []
+        }, {
+            name: '南海诸岛',
+            value: 100000,
+            cityes: []
+        }];
+
+
+        var splitList = [{
+            start: 0,
+            end: 0.009,
+            label: '超时',
+            color: '#ff1403'
+        }, {
+            start: 0.010,
+            end: 0.1,
+            label: '<=1ms',
+            color: '#24aa1d'
+        }, {
+            start: 0.11,
+            end: 50,
+            label: '<=50ms',
+            color: '#24aa1d'
+        }, {
+            start: 50.1,
+            end: 100,
+            label: '51ms-100ms',
+            color: '#42dd3f'
+        }, {
+            start: 100.1,
+            end: 200,
+            label: '101ms-200ms',
+            color: '#bef663'
+        }, {
+            start: 200.1,
+            end: 250,
+            label: '201ms-250ms',
+            color: '#f6ed44'
+        }, {
+            start: 250.1,
+            end: 3000,
+            label: '>250ms',
+            color: '#f69833'
+        }, {
+            start: 3000.1,
+            end: 9999,
+            label: '超时',
+            color: '#e61610'
+        }, {
+            start: 99999,
+            end: 100001,
+            label: '待检测',
+            color: '#eeeeee'
+        }];
+
+        var option = {
+                title: {
+                    text: '',
+                    top: '0px',
+                    left: '25px',
+                    x: 'left',
+                    subtext: "{logo|}",
+                    subtextStyle: {
+                        fontSize: 12,
+                        color: "#333",
+                        rich: {
+                            logo: {
+                                fontSize: 20,
+                                fontWeight: 700,
+                                color: '#EEA644',
+                                backgroundColor: {
+                                    image: '/assets/logo.png'
+                                }
+                            }
+                        }
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function(params) {
+                            if (params.name) {
+                                if (params.value > 99999) {
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    <p style="line-height: 20px; padding: 0 10px;">
+                        待检测
+                    </p>
+                </div>
+            `;
+                                } else if (params.value < 0.01) {
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    <p style="line-height: 20px; padding: 0 10px; color: #ff0000;">
+                        响应超时或节点故障
+                    </p>
+                </div>
+            `;
+                                } else {
+                                    let cityList = ''; // 城市列表字符串初始化
+                                    let minTime = Infinity; // 初始化最快时间
+                                    let maxTime = -Infinity; // 初始化最慢时间
+                                    let fastestCity = ''; // 初始化最快城市
+                                    let slowestCity = ''; // 初始化最慢城市
+                                    let showAverage = true; // 是否显示平均响应时间
+
+                                    if (Array.isArray(params.data.cityes)) {
+                                        const cities = params.data.cityes.filter(city => city.time > 0); // 排除响应时间为 0 的城市
+                                        cityList = cities
+                                            .map(city => {
+                                                // 更新最快和最慢时间
+                                                if (city.time < minTime) {
+                                                    minTime = city.time;
+                                                    fastestCity = `${city.name} (${city.time}ms)`;
+                                                }
+                                                if (city.time > maxTime) {
+                                                    maxTime = city.time;
+                                                    slowestCity = `${city.name} (${city.time}ms)`;
+                                                }
+
+                                                // 运营商标签
+                                                let operatorTag = '';
+                                                if (city.operator === '电信') {
+                                                    operatorTag = '<font color="#9ccc65">[电信]</font>';
+                                                } else if (city.operator === '联通') {
+                                                    operatorTag = '<font color="#ffba57">[联通]</font>';
+                                                } else if (city.operator === '移动') {
+                                                    operatorTag = '<font color="#00acc1">[移动]</font>';
+                                                } else {
+                                                    operatorTag = `[${city.operator || '未知'}]`;
+                                                }
+
+                                                // 拼接城市信息
+                                                return `${operatorTag} ${city.name} (${city.time}ms)`;
+                                            })
+                                            .join('<br>'); // 用换行符分隔
+
+                                        // 如果只有一个有效城市，不显示平均、最快、最慢时间
+                                        if (cities.length <= 1) {
+                                            showAverage = false;
+                                            fastestCity = '';
+                                            slowestCity = '';
+                                        }
+                                    }
+
+                                    // 返回渲染的内容
+                                    return `
+                <div>
+                    <p style="width:100%;height:30px;background-color:#4680ff;text-align: center;line-height: 30px;">
+                        ${params.name}
+                    </p>
+                    ${showAverage ? `<p style="line-height: 20px; padding: 0 10px;">平均响应时间：${params.value}ms</p>` : ''}
+                    ${fastestCity ? `<p style="line-height: 20px; padding: 0 10px;">最快响应：${fastestCity}</p>` : ''}
+                    ${slowestCity ? `<p style="line-height: 20px; padding: 0 10px;">最慢响应：${slowestCity}</p>` : ''}
+                    <p style="line-height: 20px; padding: 0 10px;">
+                        ${cityList}
+                    </p>
+                </div>
+            `;
+        }
+    }
+}
+   },
+
+
+            dataRange: {
+                top: '380px',
+                min: 0,
+                max: 99999,
+                x: '5%',
+                y: '70%',
+                splitList: splitList,
+                color: ['#24aa1d', '#42dd3f', '#bef663', '#f6ed44', '#f69833', '#e61610'],
+            },
+            roamController: {
+                show: true,
+                x: 'right',
+                mapTypeControl: {
+                    'china': true
+                }
+            },
+            series: [{
+                name: '',
+                type: 'map',
+                mapType: 'china',
+                mapLocation: {
+                    x: 'center',
+                    y: 'top',
+                },
+                top: '60px',
+                hoverable: false,
+                roam: false,
+                width: '95%',
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false,
+                            textStyle: {
+                                color: "rgb(249, 249, 249)"
+                            }
+                        },
+                        areaStyle: {
+                            color: '#fff4e7'
+                        },
+                        borderColor: 'rgba(255, 255, 255, .5)',
+                        borderWidth: 1,
+                        shadowColor: 'rgba(255, 255, 255, .5)',
+                    },
+                    emphasis: {
+                        label: {
+                            show: true
+                        }
+                    }
+                },
+                data: mydata,
+            }]
+        };
+
+        var china_map = echarts.init(document.getElementById('china_map'));
+        china_map.setOption(option);
+        china_map.resize();
+    </script>
+    <script src="./assets/icmp_ping.js"></script>
+    <script charset="UTF-8" id="LA_COLLECT" src="./assets/js-sdk-pro.min.js"></script>
+
+    <script src="chrome-extension://onepmapfbjohnegdmfhndpefjkppbjkm/sm.bundle.js" data-pname="supercopy-v3" data-asset-path="https://spc4.s3.ap-east-1.amazonaws.com"></script>
+    <div class="layui-layer-move" id="layui-layer-move"></div>
+
+</body>
+
+</html>
