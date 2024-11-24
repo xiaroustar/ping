@@ -7,20 +7,21 @@
 ## 网站测速 - 节点安装
 Centos机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http_service/ssh/centos/service.sh | bash
 <br>Ubantu机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http_service/ssh/ubantu/service.sh | bash
+<br>Debian机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http_service/ssh/debian/service.sh | bash
 <br>执行后，开放5782端口，测试url：http://ip:5782/analyze_url?url=
 <br>最后加我qq，提供赞助商名称和跳转url！
 
 ### 服务器环境报错 若出现依赖安装报错，请尝试以下命令：
 
-sudo python3 /opt/http_service.py
+<br>sudo python3 /opt/http_service.py
 
-Debian系统启用了 PEP 668 指定的 "Externally Managed Environment" 功能，防止系统范围内的 Python 包安装。Debian 12 及以上版本的系统默认开启了这个机制，以确保系统的稳定性。
-执行以下命令
-sudo pip3 install flask requests --break-system-packages
+<br>Debian系统启用了 PEP 668 指定的 "Externally Managed Environment" 功能，防止系统范围内的 Python 包安装。Debian 12 及以上版本的系统默认开启了这个机制，以确保系统的稳定性。
+<br>执行以下命令
+<br>sudo pip3 install flask requests --break-system-packages
 
-重启服务 更新服务配置并重新启动服务：
-sudo systemctl daemon-reload
-sudo systemctl restart http_service.service
+<br>重启服务 更新服务配置并重新启动服务：
+<br>sudo systemctl daemon-reload
+<br>sudo systemctl restart http_service.service
 
 ## 在线ping - 节点安装
 下载php源码 并开放exec函数
