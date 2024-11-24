@@ -4,11 +4,11 @@
 本项目切勿盈利，仅供学习交流使用
 # 节点问题
 关于节点由我控制，可以赞助节点，下面是部分节点安装测试工具的一条龙命令，可以直接在终端执行
-## 网站测速节点安装
+## 网站测速 - 节点安装
 Centos机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http_service/ssh/centos/service.sh | bash
 Ubantu机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http_service/ssh/ubantu/service.sh | bash
 执行后，开放5782端口，测试url：http://ip:5782/analyze_url?url=
-最后加我qq，提供赞助商名称和跳转url！
+<br>最后加我qq，提供赞助商名称和跳转url！
 ## 其他节点
 可联系我的QQ：15001904，发PHP文件拖管至网站根目录即可！
 # 安装教程
