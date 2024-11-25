@@ -15,7 +15,7 @@ Centos机器提供测速节点命令：curl -s https://ping.aa1.cn/download/http
 Centos机器提供测速节点命令：curl -s https://ping.aa1.cn/download/tcping_service/ssh/centos/service.sh | bash
 <br>Ubantu机器提供测速节点命令：curl -s https://ping.aa1.cn/download/tcping_service/ssh/ubantu/service.sh | bash
 <br>Debian机器提供测速节点命令：curl -s https://ping.aa1.cn/download/tcping_service/ssh/debian/service.sh | bash
-<br>执行后，开放5782端口，测试url：http://ip:5782/analyze_url?url=
+<br>执行后，开放5783端口，测试url：http://ip:5782/analyze_url?url=
 <br>最后加我qq，提供赞助商名称和跳转url！
 
 ### 服务器环境报错 若出现依赖安装报错，请尝试以下命令：
